@@ -1,0 +1,190 @@
+"use client";
+
+import { useState } from "react";
+import ContactModal from "./ContactModal";
+import { CheckCircle2, ShieldCheck, Utensils } from "lucide-react";
+
+export default function Hero() {
+  const [isModalOpen, setIsModalOpen] = useState(false);
+
+  return (
+    <>
+      <style>{`
+        @media (max-width: 768px) {
+          .hero-section {
+            min-height: auto !important;
+            position: relative;
+            display: flex;
+            flex-direction: column;
+          }
+          .hero-bg-img {
+            display: none;
+          }
+          .hero-title-description {
+            background-color: white;
+            padding: 2rem 2rem 1rem;
+            position: relative;
+            z-index: 10;
+            order: 1;
+          }
+          .hero-image-mobile {
+            width: 100%;
+            height: auto;
+            object-fit: cover;
+            order: 2;
+            transform: scale(1.08);
+          }
+          .hero-features {
+            background-color: white;
+            padding: 2rem;
+            position: relative;
+            z-index: 10;
+            order: 3;
+          }
+          .hero-relative-content {
+            display: none;
+          }
+          .hero-trust-bar {
+            order: 4;
+          }
+        }
+        @media (min-width: 769px) {
+          .hero-bg-img {
+            object-position: center 45% !important;
+          }
+          .hero-section {
+            min-height: 100vh !important;
+          }
+          .hero-image-mobile {
+            display: none;
+          }
+          .hero-title-description {
+            display: none;
+          }
+          .hero-features {
+            display: none;
+          }
+        }
+      `}</style>
+      <section className="hero-section relative flex flex-col justify-center pt-20 overflow-hidden bg-white">
+        {/* Background image - desktop only */}
+        <img
+          src="/img/foto-base-hero.png"
+          alt=""
+          aria-hidden="true"
+          className="absolute inset-0 w-full h-full object-cover hero-bg-img"
+        />
+
+        {/* Title and Description - Desktop */}
+        <div className="hero-relative-content relative z-10 w-full flex-grow flex items-center">
+          <div className="w-full md:w-1/2 lg:w-2/5 py-12 md:py-24 px-8 md:px-12 lg:px-16 xl:px-20">
+            <h1 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-text-main leading-tight mb-6">
+              Savvy, analítica comercial para <span className="text-secondary">restaurantes, cafeterías y heladerías.</span>
+            </h1>
+
+            <p className="text-lg sm:text-xl text-text-muted mb-10 font-medium">
+              Deja de gestionar con intuición y toma decisiones más rentables con datos reales de tu operación.
+            </p>
+
+            <div className="space-y-4 mb-10">
+              <div className="flex items-center gap-3">
+                <CheckCircle2 className="text-primary flex-shrink-0" size={24} />
+                <span className="text-text-main font-medium">Entiende el rendimiento de cada local</span>
+              </div>
+              <div className="flex items-center gap-3">
+                <CheckCircle2 className="text-primary flex-shrink-0" size={24} />
+                <span className="text-text-main font-medium">Analiza categorías y productos</span>
+              </div>
+              <div className="flex items-center gap-3">
+                <CheckCircle2 className="text-primary flex-shrink-0" size={24} />
+                <span className="text-text-main font-medium">Toma decisiones que hacen crecer tu negocio</span>
+              </div>
+            </div>
+
+            <div>
+              <button
+                onClick={() => setIsModalOpen(true)}
+                className="bg-primary hover:bg-primary/90 text-white px-8 py-4 rounded-full font-bold text-lg transition-all transform hover:-translate-y-1 shadow-lg"
+              >
+                Agenda tu Demo Gratis →
+              </button>
+              <p className="mt-4 text-sm text-text-muted font-medium">
+                Sin compromisos. Te mostramos cómo funciona y qué puede hacer por tu negocio.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        {/* Mobile Title and Description */}
+        <div className="hero-title-description">
+          <h1 className="text-3xl sm:text-4xl font-bold text-text-main leading-tight mb-4">
+            Savvy, analítica comercial para <span className="text-secondary">restaurantes, cafeterías y heladerías.</span>
+          </h1>
+
+          <p className="text-base sm:text-lg text-text-muted font-medium">
+            Deja de gestionar con intuición y toma decisiones más rentables con datos reales de tu operación.
+          </p>
+        </div>
+
+        {/* Mobile image */}
+        <img
+          src="/img/foto-base-hero-mobile.png"
+          alt="SAVVY Dashboard"
+          className="hero-image-mobile"
+        />
+
+        {/* Mobile Features */}
+        <div className="hero-features">
+          <div className="space-y-4 mb-10">
+            <div className="flex items-center gap-3">
+              <CheckCircle2 className="text-primary flex-shrink-0" size={24} />
+              <span className="text-text-main font-medium">Entiende el rendimiento de cada local</span>
+            </div>
+            <div className="flex items-center gap-3">
+              <CheckCircle2 className="text-primary flex-shrink-0" size={24} />
+              <span className="text-text-main font-medium">Analiza categorías y productos</span>
+            </div>
+            <div className="flex items-center gap-3">
+              <CheckCircle2 className="text-primary flex-shrink-0" size={24} />
+              <span className="text-text-main font-medium">Toma decisiones que hacen crecer tu negocio</span>
+            </div>
+          </div>
+
+          <div>
+            <button
+              onClick={() => setIsModalOpen(true)}
+              className="w-full bg-primary hover:bg-primary/90 text-white px-8 py-4 rounded-full font-bold text-lg transition-all transform hover:-translate-y-1 shadow-lg"
+            >
+              Agenda tu Demo Gratis →
+            </button>
+            <p className="mt-4 text-sm text-text-muted font-medium">
+              Sin compromisos. Te mostramos cómo funciona y qué puede hacer por tu negocio.
+            </p>
+          </div>
+        </div>
+
+        {/* Trust Bar */}
+        <div className="hero-trust-bar relative z-10 mt-auto bg-white/80 backdrop-blur-md border-t border-gray-200 py-4">
+          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div className="flex flex-col md:flex-row justify-center items-center divide-y md:divide-y-0 md:divide-x divide-gray-300">
+              <div className="flex items-center gap-3 px-8 py-2 md:py-0 w-full md:w-auto justify-center">
+                <ShieldCheck className="text-accent" size={20} />
+                <span className="font-semibold text-text-main text-sm uppercase tracking-wide">Datos en tiempo real</span>
+              </div>
+              <div className="flex items-center gap-3 px-8 py-2 md:py-0 w-full md:w-auto justify-center">
+                <ShieldCheck className="text-accent" size={20} />
+                <span className="font-semibold text-text-main text-sm uppercase tracking-wide">Información segura</span>
+              </div>
+              <div className="flex items-center gap-3 px-8 py-2 md:py-0 w-full md:w-auto justify-center">
+                <Utensils className="text-accent" size={20} />
+                <span className="font-semibold text-text-main text-sm uppercase tracking-wide">Diseñado para gastronomía</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <ContactModal isOpen={isModalOpen} onClose={() => setIsModalOpen(false)} />
+    </>
+  );
+}
