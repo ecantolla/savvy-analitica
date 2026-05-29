@@ -95,9 +95,9 @@ export default function Dashboard() {
             </p>
           </div>
 
-          {/* Imagen con luz azul tenue detrás (color del logo Savvy) */}
+          {/* Imagen con luz blanca tenue contenida */}
           <div className="px-8 md:px-12 pb-8">
-            <div className="rounded-xl overflow-hidden shadow-[0_0_55px_2px_rgba(30,136,229,0.45)]">
+            <div className="rounded-xl overflow-hidden shadow-[0_0_25px_0_rgba(255,255,255,0.18)]">
               <Image
                 src={`/img/${tabs[activeTab].image}`}
                 alt={tabs[activeTab].label}
