@@ -31,7 +31,7 @@ export default function Dashboard() {
         <div className="text-center max-w-3xl mx-auto mb-14">
           <div className="flex justify-center mb-6">
             <Image
-              src="/img/Logo Savvy Blanco V Azul con analitica comercial 800x260.png"
+              src="/img/Logo Savvy Blanco V Azul con analitica comercial 800x260png.png"
               alt="SAVVY"
               width={240}
               height={78}
