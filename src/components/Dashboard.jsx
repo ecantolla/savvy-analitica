@@ -82,8 +82,8 @@ export default function Dashboard() {
           </div>
         </div>
 
-        {/* Panel: título + descripción + imagen */}
-        <div className="rounded-2xl overflow-hidden shadow-[0_40px_100px_-20px_rgba(0,0,0,0.7)] bg-[#0B1120]">
+        {/* Título + descripción + imagen */}
+        <div>
 
           {/* Texto */}
           <div className="px-8 md:px-12 pt-8 pb-6 text-center">
@@ -95,9 +95,9 @@ export default function Dashboard() {
             </p>
           </div>
 
-          {/* Imagen con sombra profunda */}
+          {/* Imagen con luz azul tenue detrás (color del logo Savvy) */}
           <div className="px-8 md:px-12 pb-8">
-            <div className="rounded-xl overflow-hidden ring-1 ring-white/15 shadow-2xl shadow-black/40">
+            <div className="rounded-xl overflow-hidden shadow-[0_0_55px_2px_rgba(30,136,229,0.45)]">
               <Image
                 src={`/img/${tabs[activeTab].image}`}
                 alt={tabs[activeTab].label}
