@@ -95,9 +95,9 @@ export default function Dashboard() {
             </p>
           </div>
 
-          {/* Imagen con glow teal fuerte */}
+          {/* Imagen limpia */}
           <div className="px-8 md:px-12 pb-8">
-            <div className="rounded-xl overflow-hidden ring-2 ring-primary/60 shadow-[0_0_80px_rgba(0,191,165,0.50),0_0_120px_rgba(0,191,165,0.25)]">
+            <div className="rounded-xl overflow-hidden ring-1 ring-white/20">
               <Image
                 src={`/img/${tabs[activeTab].image}`}
                 alt={tabs[activeTab].label}
