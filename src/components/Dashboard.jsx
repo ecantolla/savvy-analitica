@@ -95,16 +95,18 @@ export default function Dashboard() {
             </p>
           </div>
 
-          {/* Imagen sin bordes */}
+          {/* Imagen con glow teal */}
           <div className="px-8 md:px-12 pb-8">
-            <Image
-              src={`/img/${tabs[activeTab].image}`}
-              alt={tabs[activeTab].label}
-              width={1600}
-              height={900}
-              className="w-full h-auto object-contain rounded-xl animate-in fade-in duration-500"
-              quality={93}
-            />
+            <div className="rounded-xl overflow-hidden ring-1 ring-primary/15 shadow-[0_0_60px_rgba(0,191,165,0.30)]">
+              <Image
+                src={`/img/${tabs[activeTab].image}`}
+                alt={tabs[activeTab].label}
+                width={1600}
+                height={900}
+                className="w-full h-auto object-contain animate-in fade-in duration-500"
+                quality={93}
+              />
+            </div>
           </div>
 
         </div>
