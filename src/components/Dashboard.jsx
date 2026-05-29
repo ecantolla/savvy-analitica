@@ -95,9 +95,12 @@ export default function Dashboard() {
             </p>
           </div>
 
-          {/* Imagen flotando: sombra solo hacia abajo, sin luz lateral */}
+          {/* Imagen con resplandor + volumen sobre fondo oscuro */}
           <div className="px-8 md:px-12 pb-8">
-            <div className="rounded-xl overflow-hidden shadow-[0_30px_40px_-18px_rgba(0,0,0,0.85)]">
+            <div
+              className="rounded-xl overflow-hidden"
+              style={{ boxShadow: "0 10px 80px 8px rgba(180,200,255,0.30), 0 40px 90px -20px rgba(0,0,0,0.55)" }}
+            >
               <Image
                 src={`/img/${tabs[activeTab].image}`}
                 alt={tabs[activeTab].label}
