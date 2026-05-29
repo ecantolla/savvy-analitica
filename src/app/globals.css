@@ -8,4 +8,9 @@
     @apply text-text-main bg-background;
     scroll-behavior: smooth;
   }
+
+  /* Separación visual entre secciones — divisor sutil superior */
+  section + section:not(.no-divider) {
+    border-top: 1px solid rgba(0, 0, 0, 0.05);
+  }
 }

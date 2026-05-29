@@ -53,7 +53,7 @@ export default function Hero() {
             object-position: center 45% !important;
           }
           .hero-section {
-            min-height: 100vh !important;
+            min-height: 100dvh !important;
           }
           .hero-image-mobile {
             display: none;

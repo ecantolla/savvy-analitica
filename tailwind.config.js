@@ -17,7 +17,7 @@ module.exports = {
         "text-muted": "#64748B", // Texto secundario
       },
       fontFamily: {
-        sans: ["var(--font-inter)", "sans-serif"],
+        sans: ["var(--font-outfit)", "system-ui", "sans-serif"],
       },
     },
   },

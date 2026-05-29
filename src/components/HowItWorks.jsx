@@ -1,80 +1,88 @@
 "use client";
 
-import { Link, Settings, Rocket } from "lucide-react";
+import Image from "next/image";
+import { Plug, SlidersHorizontal, GraduationCap } from "lucide-react";
 
 export default function HowItWorks() {
   const steps = [
     {
-      icon: <Link className="text-white w-8 h-8" />,
+      icon: Plug,
       title: "Conexión con tu POS",
-      desc: "Evaluamos tu sistema actual y definimos la integración. Savvy es compatible con cualquier POS — el costo de integración se evalúa caso a caso según tu sistema.",
-      color: "bg-primary",
-      delay: "0"
+      desc: "Evaluamos tu sistema actual y definimos la integración. Savvy es compatible con cualquier POS — el costo se evalúa caso a caso.",
     },
     {
-      icon: <Settings className="text-white w-8 h-8" />,
+      icon: SlidersHorizontal,
       title: "Configuración",
-      desc: "Configuramos Savvy con la estructura de tu cadena — locales, categorías y productos. La plataforma ya viene con todos los indicadores listos. Sin desarrollo, sin configuraciones complejas.",
-      color: "bg-secondary",
-      delay: "150"
+      desc: "Configuramos Savvy con la estructura de tu cadena — locales, categorías y productos. La plataforma ya viene con todos los indicadores listos.",
     },
     {
-      icon: <Rocket className="text-white w-8 h-8" />,
+      icon: GraduationCap,
       title: "Puesta en marcha y capacitación",
-      desc: "Capacitamos a tu equipo para que aproveche al máximo la plataforma. En 20 días hábiles estás operando con datos reales y decisiones más inteligentes.",
-      color: "bg-accent",
-      delay: "300"
-    }
+      desc: "Capacitamos a tu equipo para que aproveche al máximo la plataforma. En 20 días hábiles estás operando con datos reales.",
+    },
   ];
 
   return (
     <section className="py-24 bg-white relative overflow-hidden">
-      {/* Background Decorative Elements */}
-      <div className="absolute top-0 right-0 w-[500px] h-[500px] bg-primary/5 rounded-full blur-3xl -translate-y-1/2 translate-x-1/3"></div>
-      <div className="absolute bottom-0 left-0 w-[500px] h-[500px] bg-secondary/5 rounded-full blur-3xl translate-y-1/2 -translate-x-1/3"></div>
+      <div className="absolute top-0 right-0 w-[500px] h-[500px] bg-primary/5 rounded-full blur-3xl -translate-y-1/3 translate-x-1/3 pointer-events-none" />
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
-        <div className="text-center max-w-3xl mx-auto mb-20">
-          <h2 className="text-3xl md:text-4xl font-bold text-text-main mb-6">
-            Operativo en 20 días hábiles
-          </h2>
-          <p className="text-lg md:text-xl text-text-muted">
-            Sin interrupciones en tu operación. El proceso es simple, guiado y tú solo tienes que aprobar.
-          </p>
-        </div>
-
-        <div className="relative">
-          {/* Connecting Line (Desktop Only) */}
-          <div className="hidden lg:block absolute top-12 left-[10%] right-[10%] h-1 bg-gray-100 rounded-full">
-            <div className="absolute top-0 left-0 h-full bg-gradient-to-r from-primary via-secondary to-accent w-full opacity-30"></div>
+        <div className="grid lg:grid-cols-2 gap-12 lg:gap-16 items-center">
+          {/* Imagen: del POS a Savvy */}
+          <div className="relative order-2 lg:order-1">
+            <div className="absolute -inset-4 bg-secondary/10 rounded-[2rem] rotate-2" />
+            <div className="relative rounded-3xl overflow-hidden shadow-2xl shadow-secondary/10 ring-1 ring-black/5">
+              <Image
+                src="/img/s6-como-funciona.png"
+                alt="El sistema POS del restaurante conectándose automáticamente con el dashboard de Savvy"
+                width={1200}
+                height={680}
+                className="w-full h-auto object-cover"
+              />
+            </div>
           </div>
 
-          <div className="grid grid-cols-1 lg:grid-cols-3 gap-12 lg:gap-8">
-            {steps.map((step, index) => (
-              <div 
-                key={index}
-                className="relative flex flex-col items-center text-center group"
-              >
-                {/* Step Number Badge */}
-                <div className="absolute top-0 -mt-3 ml-20 bg-white text-text-main font-bold px-3 py-1 rounded-full shadow-sm text-sm border border-gray-100 z-20">
-                  Paso {index + 1}
-                </div>
+          {/* Pasos */}
+          <div className="order-1 lg:order-2">
+            <span className="text-sm font-semibold text-primary uppercase tracking-wider">
+              Cómo funciona
+            </span>
+            <h2 className="text-3xl md:text-[2.75rem] font-bold text-text-main mt-3 mb-4 leading-[1.1] tracking-tight text-balance">
+              Operativo en 20 días hábiles
+            </h2>
+            <p className="text-lg text-text-muted leading-relaxed mb-10">
+              Sin interrupciones en tu operación. El proceso es simple, guiado y
+              tú solo tienes que aprobar.
+            </p>
 
-                {/* Icon Container */}
-                <div className={`w-24 h-24 rounded-2xl flex items-center justify-center mb-8 relative z-10 shadow-lg transform transition-transform group-hover:-translate-y-2 ${step.color}`}>
-                  {step.icon}
-                  {/* Pulse effect */}
-                  <div className={`absolute inset-0 rounded-2xl ${step.color} opacity-40 animate-ping shadow-xl`} style={{ animationDuration: '3s' }}></div>
-                </div>
+            <div className="relative">
+              {/* Línea conectora vertical */}
+              <div className="absolute left-7 top-7 bottom-7 w-px bg-gradient-to-b from-primary/40 to-primary/10" />
 
-                <h3 className="text-2xl font-bold text-text-main mb-4">
-                  {step.title}
-                </h3>
-                <p className="text-text-muted leading-relaxed max-w-sm">
-                  {step.desc}
-                </p>
+              <div className="space-y-8">
+                {steps.map((step, index) => {
+                  const Icon = step.icon;
+                  return (
+                    <div key={index} className="relative flex gap-6 group">
+                      <div className="flex-shrink-0 w-14 h-14 rounded-2xl bg-primary text-white flex items-center justify-center shadow-lg shadow-primary/25 relative z-10 transition-transform group-hover:scale-105">
+                        <Icon className="w-6 h-6" />
+                      </div>
+                      <div className="pt-1">
+                        <div className="text-xs font-bold text-primary uppercase tracking-wider mb-1">
+                          Paso {index + 1}
+                        </div>
+                        <h3 className="text-xl font-semibold text-text-main mb-2">
+                          {step.title}
+                        </h3>
+                        <p className="text-text-muted leading-relaxed">
+                          {step.desc}
+                        </p>
+                      </div>
+                    </div>
+                  );
+                })}
               </div>
-            ))}
+            </div>
           </div>
         </div>
       </div>

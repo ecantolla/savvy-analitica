@@ -69,13 +69,26 @@ export default function UseCases() {
     <section className="py-24 bg-white" id="para-que-sirve">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center max-w-3xl mx-auto mb-16">
-          <h2 className="text-3xl md:text-4xl font-bold text-text-main mb-6">
-            ¿Para qué sirve exactamente Savvy?
+          <span className="text-sm font-semibold text-primary uppercase tracking-wider">
+            Casos de uso
+          </span>
+          <h2 className="text-3xl md:text-[2.75rem] font-bold text-text-main mt-3 mb-5 leading-[1.1] tracking-tight text-balance">
+            ¿Para qué sirve Savvy?
           </h2>
-          <p className="text-lg md:text-xl text-text-muted">
+          <p className="text-lg text-text-muted leading-relaxed">
             Nueve razones concretas por las que los directivos y dueños de cadenas gastronómicas eligen Savvy.
           </p>
         </div>
+
+        {/* Texto accesible / SEO: las 9 razones como contenido real para buscadores y lectores de pantalla.
+            El círculo es una imagen; esta lista garantiza que Google indexe los títulos y descripciones. */}
+        <ul className="sr-only">
+          {allCases.map((c) => (
+            <li key={`seo-${c.num}`}>
+              <strong>{c.title}.</strong> {c.desc}
+            </li>
+          ))}
+        </ul>
 
         {/* Desktop: Imagen del círculo con sectores SVG interactivos */}
         <div className="hidden lg:flex lg:gap-12 lg:items-center lg:justify-center max-w-7xl mx-auto">
@@ -85,8 +98,9 @@ export default function UseCases() {
             <div className="relative w-full aspect-square">
               <Image
                 src="/img/Circulo_Savvy.png"
-                alt="Círculo interactivo Savvy"
+                alt="Círculo interactivo con las nueve razones para usar Savvy"
                 fill
+                sizes="(max-width: 1024px) 0px, 700px"
                 className="object-contain pointer-events-none"
               />
 
@@ -109,20 +123,24 @@ export default function UseCases() {
                     <path
                       key={i}
                       d={d}
+                      role="button"
+                      aria-label={allCases[i].title}
+                      aria-pressed={isActive}
                       onClick={() => setActiveCase(i)}
                       onMouseEnter={() => setHoveredCase(i)}
                       onMouseLeave={() => setHoveredCase(null)}
                       style={{
                         fill: isActive
-                          ? "rgba(255,255,255,0.18)"
+                          ? "rgba(255,255,255,0.20)"
                           : isHovered
-                          ? "rgba(255,255,255,0.10)"
+                          ? "rgba(255,255,255,0.09)"
                           : "rgba(0,0,0,0)",
-                        stroke: "none",
-                        strokeWidth: 0,
+                        stroke: isActive ? "rgba(255,255,255,0.55)" : "none",
+                        strokeWidth: isActive ? 1.5 : 0,
+                        strokeLinejoin: "round",
                         cursor: "pointer",
                         pointerEvents: "auto",
-                        transition: "fill 0.15s ease",
+                        transition: "fill 0.2s ease, stroke 0.2s ease",
                       }}
                     />
                   );
