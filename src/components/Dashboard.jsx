@@ -95,9 +95,9 @@ export default function Dashboard() {
             </p>
           </div>
 
-          {/* Imagen con luz teal detrás */}
+          {/* Imagen con sombra profunda */}
           <div className="px-8 md:px-12 pb-8">
-            <div className="rounded-xl overflow-hidden ring-1 ring-white/10 shadow-[0_20px_50px_-10px_rgba(0,191,165,0.20)]">
+            <div className="rounded-xl overflow-hidden ring-1 ring-white/15 shadow-2xl shadow-black/40">
               <Image
                 src={`/img/${tabs[activeTab].image}`}
                 alt={tabs[activeTab].label}
