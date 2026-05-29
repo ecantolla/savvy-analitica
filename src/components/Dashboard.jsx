@@ -31,10 +31,10 @@ export default function Dashboard() {
         <div className="text-center max-w-3xl mx-auto mb-14">
           <div className="flex justify-center mb-6">
             <Image
-              src="/img/1-Logo-Savvy-Azul.png"
+              src="/img/Logo Savvy Blanco V Azul con analitica comercial 800x260.png"
               alt="SAVVY"
-              width={200}
-              height={67}
+              width={240}
+              height={78}
               className="h-16 w-auto"
             />
           </div>
@@ -82,23 +82,31 @@ export default function Dashboard() {
           </div>
         </div>
 
-        {/* Descripción flotante */}
-        <p className="text-white/60 leading-relaxed text-[15px] max-w-2xl mx-auto text-center mb-8">
-          {tabs[activeTab].desc}
-        </p>
+        {/* Panel: título + descripción + imagen */}
+        <div className="rounded-2xl overflow-hidden shadow-[0_40px_100px_-20px_rgba(0,0,0,0.7)] bg-[#0B1120]">
 
-        {/* Imagen destacada */}
-        <div className="rounded-2xl overflow-hidden ring-1 ring-white/10 shadow-[0_40px_100px_-20px_rgba(0,0,0,0.7)] p-3 md:p-4 bg-[#0B1120]">
-          <div className="rounded-xl overflow-hidden ring-1 ring-primary/15 shadow-[0_0_80px_-15px_rgba(0,191,165,0.12)]">
+          {/* Texto */}
+          <div className="px-8 md:px-12 pt-8 pb-6 text-center">
+            <h3 className="font-semibold text-white mb-3" style={{ fontSize: "23px" }}>
+              {tabs[activeTab].label}
+            </h3>
+            <p className="text-white/70 leading-relaxed text-base md:text-lg max-w-3xl mx-auto">
+              {tabs[activeTab].desc}
+            </p>
+          </div>
+
+          {/* Imagen sin bordes */}
+          <div className="px-8 md:px-12 pb-8">
             <Image
               src={`/img/${tabs[activeTab].image}`}
               alt={tabs[activeTab].label}
               width={1600}
               height={900}
-              className="w-full h-auto object-contain animate-in fade-in duration-500"
+              className="w-full h-auto object-contain rounded-xl animate-in fade-in duration-500"
               quality={93}
             />
           </div>
+
         </div>
       </div>
     </section>
