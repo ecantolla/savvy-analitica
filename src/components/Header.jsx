@@ -20,11 +20,11 @@ export default function Header() {
   }, []);
 
   const navLinks = [
-    { name: "¿Qué es Savvy?", href: "#que-es" },
-    { name: "Para qué sirve", href: "#para-que-sirve" },
-    { name: "Dashboard", href: "#dashboard" },
-    { name: "Precios", href: "#precios" },
-    { name: "Preguntas Frecuentes", href: "#faq" },
+    { name: "¿Qué es Savvy?", href: "/#que-es" },
+    { name: "Para qué sirve", href: "/#para-que-sirve" },
+    { name: "Dashboard", href: "/#dashboard" },
+    { name: "Precios", href: "/#precios" },
+    { name: "Preguntas Frecuentes", href: "/#faq" },
   ];
 
   return (
@@ -42,9 +42,9 @@ export default function Header() {
                 <Image
                   src="/img/1-Logo-Savvy-Azul.png"
                   alt="SAVVY Logo"
-                  width={138}
-                  height={46}
-                  className="h-[46px] w-auto"
+                  width={150}
+                  height={50}
+                  className="h-[50px] w-auto"
                 />
               </Link>
             </div>

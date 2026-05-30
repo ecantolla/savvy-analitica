@@ -14,3 +14,23 @@
     border-top: 1px solid rgba(0, 0, 0, 0.05);
   }
 }
+
+/* Animación de entrada para imagen activa en Dashboard tabs */
+@keyframes tabFadeIn {
+  from { opacity: 0.2; transform: translateY(6px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
+.tab-image-enter {
+  animation: tabFadeIn 0.4s ease-out;
+}
+
+/* Animación de entrada para descripción de tab */
+@keyframes tabTextIn {
+  from { opacity: 0; transform: translateY(5px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
+.tab-text-enter {
+  animation: tabTextIn 0.25s ease-out;
+}

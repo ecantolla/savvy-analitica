@@ -2,7 +2,6 @@
 
 import { useState } from "react";
 import Image from "next/image";
-import Link from "next/link";
 
 export default function Dashboard() {
   const [activeTab, setActiveTab] = useState(0);
@@ -19,6 +18,8 @@ export default function Dashboard() {
     { id: 8, label: "Comparación de Locales",  image: "vista9-comparacion-locales.jpg", desc: "Qué categorías venden más en cada sucursal y mes. Identifica si tu fuerte es el Bebestible en el Local 1 o la Pasta en el Local 2 — y toma decisiones de carta, stock y promociones." },
   ];
 
+  const boxShadow = { boxShadow: "0 10px 80px 8px rgba(180,200,255,0.30), 0 40px 90px -20px rgba(0,0,0,0.55)" };
+
   return (
     <section className="py-24 bg-dark-bg relative overflow-hidden no-divider" id="dashboard">
       {/* Glow de fondo */}
@@ -27,7 +28,7 @@ export default function Dashboard() {
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
 
-        {/* Header — texto blanco */}
+        {/* Header */}
         <div className="text-center max-w-3xl mx-auto mb-14">
           <div className="flex justify-center mb-6">
             <Image
@@ -46,73 +47,89 @@ export default function Dashboard() {
           </p>
         </div>
 
-        {/* Tabs — 5 arriba / 4 abajo */}
-        <div className="flex flex-col items-center gap-2 mb-10">
-          {/* Fila 1: primeras 5 */}
-          <div className="flex flex-wrap justify-center gap-2">
-            {tabs.slice(0, 5).map((tab) => (
+        {/* Desktop: columna izquierda (tabs) + columna derecha (imagen) */}
+        <div className="hidden lg:grid grid-cols-[175px_1fr] gap-6 items-start">
+
+          {/* Tabs verticales — sticky mientras scrolleas la imagen */}
+          <div className="flex flex-col gap-1 sticky top-24">
+            {tabs.map((tab) => (
               <button
                 key={tab.id}
                 onClick={() => setActiveTab(tab.id)}
-                className={`px-5 py-2.5 rounded-full text-sm font-semibold transition-all duration-300 ${
+                className={`text-left px-4 py-2.5 rounded-full text-sm font-semibold transition-all duration-200 ${
                   activeTab === tab.id
-                    ? "bg-primary text-white shadow-lg shadow-primary/30 scale-105"
-                    : "bg-transparent text-white/60 hover:bg-white/10 hover:text-white border border-white/35"
+                    ? "bg-primary text-white shadow-lg shadow-primary/25"
+                    : "text-white/60 border border-white/35 hover:text-white hover:bg-white/10"
                 }`}
               >
                 {tab.label}
               </button>
             ))}
           </div>
-          {/* Fila 2: últimas 4 */}
-          <div className="flex flex-wrap justify-center gap-2">
-            {tabs.slice(5).map((tab) => (
-              <button
-                key={tab.id}
-                onClick={() => setActiveTab(tab.id)}
-                className={`px-5 py-2.5 rounded-full text-sm font-semibold transition-all duration-300 ${
-                  activeTab === tab.id
-                    ? "bg-primary text-white shadow-lg shadow-primary/30 scale-105"
-                    : "bg-transparent text-white/60 hover:bg-white/10 hover:text-white border border-white/35"
-                }`}
-              >
-                {tab.label}
-              </button>
-            ))}
-          </div>
-        </div>
 
-        {/* Título + descripción + imagen */}
-        <div>
-
-          {/* Texto */}
-          <div className="px-8 md:px-12 pt-8 pb-6 text-center">
-            <h3 className="font-semibold text-white mb-3" style={{ fontSize: "23px" }}>
-              {tabs[activeTab].label}
-            </h3>
-            <p className="text-white/70 leading-relaxed text-base md:text-lg max-w-3xl mx-auto">
-              {tabs[activeTab].desc}
-            </p>
-          </div>
-
-          {/* Imagen con resplandor + volumen sobre fondo oscuro */}
-          <div className="px-8 md:px-12 pb-8">
+          {/* Imagen + descripción debajo */}
+          <div>
             <div
-              className="rounded-xl overflow-hidden"
-              style={{ boxShadow: "0 10px 80px 8px rgba(180,200,255,0.30), 0 40px 90px -20px rgba(0,0,0,0.55)" }}
+              key={`img-${activeTab}`}
+              className="rounded-xl overflow-hidden tab-image-enter"
+              style={boxShadow}
             >
               <Image
                 src={`/img/${tabs[activeTab].image}`}
                 alt={tabs[activeTab].label}
                 width={1600}
                 height={900}
-                className="w-full h-auto object-contain animate-in fade-in duration-500"
+                className="w-full h-auto object-contain"
                 quality={93}
               />
             </div>
+            <div key={`text-${activeTab}`} className="mt-5 tab-text-enter">
+              <h3 className="text-lg font-semibold text-white mb-1.5">
+                {tabs[activeTab].label}
+              </h3>
+              <p className="text-white/70 leading-relaxed text-sm">
+                {tabs[activeTab].desc}
+              </p>
+            </div>
+          </div>
+        </div>
+
+        {/* Mobile: selector desplegable + imagen */}
+        <div className="lg:hidden">
+          <div className="relative mb-6">
+            <select
+              value={activeTab}
+              onChange={(e) => setActiveTab(Number(e.target.value))}
+              className="w-full appearance-none bg-white/10 border border-white/35 text-white font-semibold text-sm px-4 py-3 rounded-full pr-10 outline-none focus:ring-2 focus:ring-primary/50 cursor-pointer"
+            >
+              {tabs.map((tab) => (
+                <option key={tab.id} value={tab.id} className="bg-[#0F172A] text-white">
+                  {tab.label}
+                </option>
+              ))}
+            </select>
+            <div className="pointer-events-none absolute right-4 top-1/2 -translate-y-1/2 text-white/60">
+              ▾
+            </div>
           </div>
 
+          <div key={`img-m-${activeTab}`} className="tab-image-enter" style={boxShadow}>
+            <Image
+              src={`/img/${tabs[activeTab].image}`}
+              alt={tabs[activeTab].label}
+              width={1600}
+              height={900}
+              className="w-full h-auto object-contain rounded-xl"
+              quality={93}
+            />
+          </div>
+
+          <div key={`text-m-${activeTab}`} className="mt-4 tab-text-enter">
+            <h3 className="text-base font-semibold text-white mb-1.5">{tabs[activeTab].label}</h3>
+            <p className="text-white/70 leading-relaxed text-sm">{tabs[activeTab].desc}</p>
+          </div>
         </div>
+
       </div>
     </section>
   );

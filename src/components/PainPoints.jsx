@@ -64,28 +64,27 @@ export default function PainPoints() {
           })}
         </div>
 
-        {/* Foto antes/después — más acotada y bien encuadrada */}
-        <div className="mt-16 grid lg:grid-cols-2 gap-8 items-center">
-          <div className="relative rounded-3xl overflow-hidden shadow-xl ring-1 ring-black/5 aspect-[4/3]">
-            <Image
-              src="/img/s2-pain-points.png"
-              alt="Del caos de las planillas al control con datos reales en Savvy"
-              fill
-              className="object-cover object-center"
-              sizes="(max-width: 1024px) 100vw, 50vw"
-            />
-            <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent flex items-end p-6">
-              <p className="text-white font-semibold text-lg text-balance">
-                Del caos de las planillas al control con datos reales.
-              </p>
-            </div>
-          </div>
-          <div className="space-y-4">
-            <p className="text-2xl font-bold text-text-main leading-snug text-balance">
-              Savvy convierte cada venta en una decisión más inteligente.
-            </p>
-            <p className="text-text-muted text-lg leading-relaxed">
-              Sin exportar datos, sin pedirle reportes a nadie, sin armar planillas. La información está lista cuando la necesitas — por local, por turno, por producto.
+        {/* Texto centrado + foto panorámica */}
+        <div className="mt-16 text-center max-w-3xl mx-auto mb-10">
+          <p className="text-2xl md:text-3xl font-bold text-text-main leading-snug text-balance">
+            Savvy convierte cada venta en una decisión más inteligente.
+          </p>
+          <p className="text-text-muted text-lg leading-relaxed mt-4">
+            Sin exportar datos, sin pedirle reportes a nadie, sin armar planillas. La información está lista cuando la necesitas — por local, por turno, por producto.
+          </p>
+        </div>
+
+        <div className="relative rounded-3xl overflow-hidden shadow-xl ring-1 ring-black/5 aspect-[16/7] max-w-3xl mx-auto">
+          <Image
+            src="/img/s2-pain-points.png"
+            alt="Del caos de las planillas al control con datos reales en Savvy"
+            fill
+            className="object-cover object-center"
+            sizes="(max-width: 1024px) 100vw, 80vw"
+          />
+          <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent flex items-end p-8">
+            <p className="text-white font-semibold text-lg text-balance">
+              Del caos de las planillas al control con datos reales.
             </p>
           </div>
         </div>
