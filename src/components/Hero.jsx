@@ -69,7 +69,7 @@ export default function Hero() {
       <section className="hero-section relative flex flex-col justify-center pt-20 overflow-hidden bg-white">
         {/* Background image - desktop only */}
         <img
-          src="/img/foto-base-hero.png"
+          src="/img/foto-base-hero.webp"
           alt=""
           aria-hidden="true"
           className="absolute inset-0 w-full h-full object-cover hero-bg-img"
@@ -128,7 +128,7 @@ export default function Hero() {
 
         {/* Mobile image */}
         <img
-          src="/img/foto-base-hero-mobile.png"
+          src="/img/foto-base-hero-mobile.webp"
           alt="SAVVY Dashboard"
           className="hero-image-mobile"
         />

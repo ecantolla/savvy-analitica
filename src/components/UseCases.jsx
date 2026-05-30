@@ -97,7 +97,7 @@ export default function UseCases() {
           <div className="relative w-full" style={{ maxWidth: "700px" }}>
             <div className="relative w-full aspect-square">
               <Image
-                src="/img/Circulo_Savvy.png"
+                src="/img/Circulo_Savvy.webp"
                 alt="Círculo interactivo con las nueve razones para usar Savvy"
                 fill
                 sizes="(max-width: 1024px) 0px, 700px"

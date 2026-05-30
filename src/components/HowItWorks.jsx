@@ -33,7 +33,7 @@ export default function HowItWorks() {
             <div className="absolute -inset-4 bg-secondary/10 rounded-[2rem] rotate-2" />
             <div className="relative rounded-3xl overflow-hidden shadow-2xl shadow-secondary/10 ring-1 ring-black/5">
               <Image
-                src="/img/s6-como-funciona.png"
+                src="/img/s6-como-funciona.webp"
                 alt="El sistema POS del restaurante conectándose automáticamente con el dashboard de Savvy"
                 width={1200}
                 height={680}

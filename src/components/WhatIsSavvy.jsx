@@ -50,7 +50,7 @@ export default function WhatIsSavvy() {
             <div className="absolute -inset-4 bg-primary/10 rounded-[2rem] -rotate-2" />
             <div className="relative rounded-3xl overflow-hidden shadow-2xl shadow-secondary/10 ring-1 ring-black/5">
               <Image
-                src="/img/s3-que-es-savvy.png"
+                src="/img/s3-que-es-savvy.webp"
                 alt="Dueño de restaurante revisando los indicadores de su cadena en el dashboard de Savvy"
                 width={1200}
                 height={680}

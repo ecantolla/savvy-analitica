@@ -76,7 +76,7 @@ export default function PainPoints() {
 
         <div className="relative rounded-3xl overflow-hidden shadow-xl ring-1 ring-black/5 aspect-[16/7] max-w-3xl mx-auto">
           <Image
-            src="/img/s2-pain-points.png"
+            src="/img/s2-pain-points.webp"
             alt="Del caos de las planillas al control con datos reales en Savvy"
             fill
             className="object-cover object-center"

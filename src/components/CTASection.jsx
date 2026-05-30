@@ -69,7 +69,7 @@ export default function CTASection() {
               <div className="absolute -inset-4 bg-primary/10 rounded-[2rem] rotate-2" />
               <div className="relative rounded-3xl overflow-hidden shadow-2xl ring-1 ring-white/10">
                 <Image
-                  src="/img/s8-cta.png"
+                  src="/img/s8-cta.webp"
                   alt="Dueño de cafetería revisando con tranquilidad el crecimiento de sus ventas en Savvy"
                   width={1200}
                   height={680}

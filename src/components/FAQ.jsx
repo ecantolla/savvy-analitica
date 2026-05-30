@@ -62,7 +62,7 @@ export default function FAQ() {
           {/* Ilustración pequeña — decorativa */}
           <div className="hidden lg:block flex-shrink-0 w-40 h-40 relative">
             <Image
-              src="/img/s9-faq.png"
+              src="/img/s9-faq.webp"
               alt=""
               fill
               className="object-contain object-center"
