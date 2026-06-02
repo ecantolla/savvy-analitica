@@ -21,7 +21,6 @@ export default function Header() {
 
   const navLinks = [
     { name: "¿Qué es Savvy?", href: "/#que-es" },
-    { name: "Para qué sirve", href: "/#para-que-sirve" },
     { name: "Dashboard", href: "/#dashboard" },
     { name: "Precios", href: "/#precios" },
     { name: "Preguntas Frecuentes", href: "/#faq" },

@@ -21,8 +21,8 @@ export default function Home() {
       <Hero />
       <PainPoints />
       <WhatIsSavvy />
-      <UseCases />
       <Dashboard />
+      <UseCases />
       <HowItWorks />
       <Pricing />
       <CTASection />

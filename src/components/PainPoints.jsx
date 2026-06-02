@@ -20,15 +20,31 @@ export default function PainPoints() {
     <section className="py-24 bg-white" id="pain-points">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
 
-        {/* Header */}
-        <div className="text-center max-w-3xl mx-auto mb-16">
-          <h2 className="text-3xl md:text-[2.75rem] font-bold text-text-main mt-3 mb-5 leading-[1.1] tracking-tight text-balance">
-            Los 6 dolores de cabeza que Savvy elimina
-          </h2>
-          <p className="text-xl text-text-muted leading-relaxed">
-            Si gestionas una cadena de restaurantes, cafeterías o heladerías,
-            probablemente vives uno o más de estos cada semana.
-          </p>
+        {/* Header — 2 columnas: texto + foto */}
+        <div className="grid lg:grid-cols-2 gap-10 lg:gap-16 items-center mb-16">
+          <div>
+            <h2 className="text-3xl md:text-[2.75rem] font-bold text-text-main mb-5 leading-[1.1] tracking-tight text-balance">
+              Los 6 dolores de cabeza que Savvy elimina
+            </h2>
+            <p className="text-xl text-text-muted leading-relaxed">
+              Si gestionas una cadena de restaurantes, cafeterías o heladerías,
+              probablemente vives uno o más de estos cada semana.
+            </p>
+          </div>
+          <div className="relative rounded-2xl overflow-hidden shadow-xl ring-1 ring-black/5 aspect-[16/9] max-w-lg">
+            <Image
+              src="/img/s2-pain-points.webp"
+              alt="Del caos de las planillas al control con datos reales en Savvy"
+              fill
+              className="object-cover object-center"
+              sizes="(max-width: 1024px) 100vw, 40vw"
+            />
+            <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent flex items-end p-5">
+              <p className="text-white font-semibold text-sm text-balance">
+                Del caos de las planillas al control con datos reales.
+              </p>
+            </div>
+          </div>
         </div>
 
         {/* Grid */}
@@ -63,30 +79,6 @@ export default function PainPoints() {
           })}
         </div>
 
-        {/* Texto centrado + foto panorámica */}
-        <div className="mt-16 text-center max-w-3xl mx-auto mb-10">
-          <p className="text-2xl md:text-3xl font-bold text-text-main leading-snug text-balance">
-            Savvy convierte cada venta en una decisión más inteligente.
-          </p>
-          <p className="text-text-muted text-xl leading-relaxed mt-4">
-            Sin exportar datos, sin pedirle reportes a nadie, sin armar planillas. La información está lista cuando la necesitas — por local, por turno, por producto.
-          </p>
-        </div>
-
-        <div className="relative rounded-3xl overflow-hidden shadow-xl ring-1 ring-black/5 aspect-[16/7] max-w-3xl mx-auto">
-          <Image
-            src="/img/s2-pain-points.webp"
-            alt="Del caos de las planillas al control con datos reales en Savvy"
-            fill
-            className="object-cover object-center"
-            sizes="(max-width: 1024px) 100vw, 80vw"
-          />
-          <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent flex items-end p-8">
-            <p className="text-white font-semibold text-lg text-balance">
-              Del caos de las planillas al control con datos reales.
-            </p>
-          </div>
-        </div>
 
       </div>
     </section>
