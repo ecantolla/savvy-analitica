@@ -32,13 +32,10 @@ export default function WhatIsSavvy() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Header a todo el ancho */}
         <div className="text-center max-w-4xl mx-auto mb-16">
-          <span className="text-sm font-semibold text-primary uppercase tracking-wider">
-            Qué es Savvy
-          </span>
           <h2 className="text-3xl md:text-[2.75rem] font-bold text-text-main mt-3 mb-5 leading-[1.1] tracking-tight text-balance">
             Convierte los datos de tu POS en decisiones que dejan plata
           </h2>
-          <p className="text-lg text-text-muted leading-relaxed max-w-2xl mx-auto">
+          <p className="text-xl text-text-muted leading-relaxed max-w-2xl mx-auto">
             Savvy se conecta a tu sistema de venta y, sin trabajo manual, transforma cada
             transacción en información clara para gestionar tu cadena con cabeza fría.
           </p>

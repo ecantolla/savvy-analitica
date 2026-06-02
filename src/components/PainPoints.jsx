@@ -22,11 +22,10 @@ export default function PainPoints() {
 
         {/* Header */}
         <div className="text-center max-w-3xl mx-auto mb-16">
-          <span className="text-sm font-semibold text-primary uppercase tracking-wider">El problema</span>
           <h2 className="text-3xl md:text-[2.75rem] font-bold text-text-main mt-3 mb-5 leading-[1.1] tracking-tight text-balance">
             Los 6 dolores de cabeza que Savvy elimina
           </h2>
-          <p className="text-lg text-text-muted leading-relaxed">
+          <p className="text-xl text-text-muted leading-relaxed">
             Si gestionas una cadena de restaurantes, cafeterías o heladerías,
             probablemente vives uno o más de estos cada semana.
           </p>
@@ -43,7 +42,7 @@ export default function PainPoints() {
               >
                 {/* Número + ícono */}
                 <div className="flex items-center justify-between">
-                  <span className="text-5xl font-black text-primary/15 leading-none select-none">
+                  <span className="text-5xl font-black text-primary/30 leading-none select-none">
                     {String(index + 1).padStart(2, "0")}
                   </span>
                   <div className="w-14 h-14 rounded-xl bg-primary/10 text-primary flex items-center justify-center">
@@ -55,7 +54,7 @@ export default function PainPoints() {
                   <h3 className="text-lg font-semibold text-text-main mb-2 leading-snug">
                     {point.title}
                   </h3>
-                  <p className="text-text-muted leading-relaxed text-[15px]">
+                  <p className="text-text-muted leading-relaxed text-base">
                     {point.description}
                   </p>
                 </div>
@@ -69,7 +68,7 @@ export default function PainPoints() {
           <p className="text-2xl md:text-3xl font-bold text-text-main leading-snug text-balance">
             Savvy convierte cada venta en una decisión más inteligente.
           </p>
-          <p className="text-text-muted text-lg leading-relaxed mt-4">
+          <p className="text-text-muted text-xl leading-relaxed mt-4">
             Sin exportar datos, sin pedirle reportes a nadie, sin armar planillas. La información está lista cuando la necesitas — por local, por turno, por producto.
           </p>
         </div>

@@ -55,7 +55,6 @@ const createSectorPath = (cx, cy, innerR, outerR, startDeg, endDeg) => {
 
 export default function UseCases() {
   const [activeCase, setActiveCase] = useState(0);
-  const [hoveredCase, setHoveredCase] = useState(null);
 
   // Coordenadas del SVG overlay (viewBox "0 0 700 700")
   const cx = 350;
@@ -69,13 +68,10 @@ export default function UseCases() {
     <section className="py-24 bg-white" id="para-que-sirve">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center max-w-3xl mx-auto mb-16">
-          <span className="text-sm font-semibold text-primary uppercase tracking-wider">
-            Casos de uso
-          </span>
           <h2 className="text-3xl md:text-[2.75rem] font-bold text-text-main mt-3 mb-5 leading-[1.1] tracking-tight text-balance">
             ¿Para qué sirve Savvy?
           </h2>
-          <p className="text-lg text-text-muted leading-relaxed">
+          <p className="text-xl text-text-muted leading-relaxed">
             Nueve razones concretas por las que los directivos y dueños de cadenas gastronómicas eligen Savvy.
           </p>
         </div>
@@ -116,31 +112,20 @@ export default function UseCases() {
                   const startDeg = i * segAngle + startOffset;
                   const endDeg   = startDeg + segAngle;
                   const d        = createSectorPath(cx, cy, innerR, outerR, startDeg, endDeg);
-                  const isActive  = activeCase === i;
-                  const isHovered = hoveredCase === i;
-
                   return (
                     <path
                       key={i}
                       d={d}
                       role="button"
                       aria-label={allCases[i].title}
-                      aria-pressed={isActive}
+                      aria-pressed={activeCase === i}
                       onClick={() => setActiveCase(i)}
-                      onMouseEnter={() => setHoveredCase(i)}
-                      onMouseLeave={() => setHoveredCase(null)}
                       style={{
-                        fill: isActive
-                          ? "rgba(255,255,255,0.20)"
-                          : isHovered
-                          ? "rgba(255,255,255,0.09)"
-                          : "rgba(0,0,0,0)",
-                        stroke: isActive ? "rgba(255,255,255,0.55)" : "none",
-                        strokeWidth: isActive ? 1.5 : 0,
-                        strokeLinejoin: "round",
+                        fill: "rgba(0,0,0,0)",
+                        stroke: "none",
+                        strokeWidth: 0,
                         cursor: "pointer",
                         pointerEvents: "auto",
-                        transition: "fill 0.2s ease, stroke 0.2s ease",
                       }}
                     />
                   );
@@ -193,7 +178,7 @@ export default function UseCases() {
 
               {activeCase === i && (
                 <div className="px-4 pb-4 border-t border-gray-200 bg-gray-50">
-                  <p className="text-slate-700 leading-relaxed text-sm">
+                  <p className="text-slate-700 leading-relaxed text-base">
                     {useCase.desc}
                   </p>
                 </div>

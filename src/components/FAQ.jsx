@@ -38,7 +38,7 @@ export default function FAQ() {
         />
       </button>
       <div className={`px-6 overflow-hidden transition-all duration-300 ease-in-out ${openIndex === globalIndex ? "max-h-60 pb-5 opacity-100" : "max-h-0 opacity-0"}`}>
-        <p className="text-text-muted leading-relaxed text-[15px]">{faq.a}</p>
+        <p className="text-text-muted leading-relaxed text-base">{faq.a}</p>
       </div>
     </div>
   );
@@ -50,11 +50,10 @@ export default function FAQ() {
         {/* Header */}
         <div className="flex flex-col lg:flex-row lg:items-center lg:justify-between gap-6 mb-12">
           <div className="max-w-xl">
-            <span className="text-sm font-semibold text-primary uppercase tracking-wider">Dudas</span>
             <h2 className="text-3xl md:text-[2.75rem] font-bold text-text-main mt-3 mb-4 leading-[1.1] tracking-tight text-balance">
               Preguntas frecuentes
             </h2>
-            <p className="text-lg text-text-muted leading-relaxed">
+            <p className="text-xl text-text-muted leading-relaxed">
               Todo lo que necesitas saber antes de tu demo. Si tienes más preguntas,
               escríbenos por WhatsApp — respondemos rápido.
             </p>

@@ -51,13 +51,10 @@ export default function Pricing() {
       <section className="py-24 bg-[#F0F9F8]" id="precios">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center max-w-3xl mx-auto mb-16">
-            <span className="text-sm font-semibold text-primary uppercase tracking-wider">
-              Precios
-            </span>
             <h2 className="text-3xl md:text-[2.75rem] font-bold text-text-main mt-3 mb-5 leading-[1.1] tracking-tight text-balance">
               Planes diseñados para crecer contigo
             </h2>
-            <p className="text-lg text-text-muted leading-relaxed">
+            <p className="text-xl text-text-muted leading-relaxed">
               Todos los planes incluyen las mismas funcionalidades. El precio varía solo según el número de locales.
             </p>
           </div>
@@ -111,7 +108,7 @@ export default function Pricing() {
                   </div>
                   <div>
                     <p className="text-sm font-semibold text-text-main">{feature.label}</p>
-                    <p className="text-xs text-text-muted mt-0.5 leading-relaxed">{feature.desc}</p>
+                    <p className="text-[13px] text-text-muted mt-0.5 leading-relaxed">{feature.desc}</p>
                   </div>
                 </div>
               ))}

@@ -31,7 +31,7 @@ export default function CTASection() {
               <h2 className="text-3xl md:text-[2.75rem] font-bold mb-5 leading-[1.1] tracking-tight text-balance">
                 ¿Listo para gestionar tu cadena con datos reales?
               </h2>
-              <p className="text-lg text-gray-300 mb-8 leading-relaxed">
+              <p className="text-xl text-gray-300 mb-8 leading-relaxed">
                 Agenda una demo gratuita y te mostramos Savvy en acción —con datos reales,
                 sin presentaciones genéricas. En menos de 30 minutos verás exactamente cómo
                 puede transformar la gestión de tu cadena.

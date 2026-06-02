@@ -42,7 +42,7 @@ export default function Dashboard() {
           <h2 className="text-3xl md:text-[2.75rem] font-bold text-white mt-3 mb-5 leading-[1.1] tracking-tight text-balance">
             Todo lo que necesitas, en un solo lugar
           </h2>
-          <p className="text-lg text-white/60 leading-relaxed">
+          <p className="text-xl text-white/60 leading-relaxed">
             Savvy incluye 9 vistas especializadas, cada una diseñada para darte la información exacta en el momento que la necesitas.
           </p>
         </div>
@@ -56,7 +56,7 @@ export default function Dashboard() {
               <button
                 key={tab.id}
                 onClick={() => setActiveTab(tab.id)}
-                className={`text-left px-4 py-2.5 rounded-full text-sm font-semibold transition-all duration-200 ${
+                className={`text-left px-4 py-2.5 rounded-full text-[15px] font-semibold transition-all duration-200 ${
                   activeTab === tab.id
                     ? "bg-primary text-white shadow-lg shadow-primary/25"
                     : "text-white/60 border border-white/35 hover:text-white hover:bg-white/10"
@@ -87,7 +87,7 @@ export default function Dashboard() {
               <h3 className="text-lg font-semibold text-white mb-1.5">
                 {tabs[activeTab].label}
               </h3>
-              <p className="text-white/70 leading-relaxed text-sm">
+              <p className="text-white/70 leading-relaxed text-[15px]">
                 {tabs[activeTab].desc}
               </p>
             </div>

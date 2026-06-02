@@ -44,13 +44,10 @@ export default function HowItWorks() {
 
           {/* Pasos */}
           <div className="order-1 lg:order-2">
-            <span className="text-sm font-semibold text-primary uppercase tracking-wider">
-              Cómo funciona
-            </span>
             <h2 className="text-3xl md:text-[2.75rem] font-bold text-text-main mt-3 mb-4 leading-[1.1] tracking-tight text-balance">
               Operativo en 20 días hábiles
             </h2>
-            <p className="text-lg text-text-muted leading-relaxed mb-10">
+            <p className="text-xl text-text-muted leading-relaxed mb-10">
               Sin interrupciones en tu operación. El proceso es simple, guiado y
               tú solo tienes que aprobar.
             </p>
@@ -68,7 +65,7 @@ export default function HowItWorks() {
                         <Icon className="w-6 h-6" />
                       </div>
                       <div className="pt-1">
-                        <div className="text-xs font-bold text-primary uppercase tracking-wider mb-1">
+                        <div className="text-[13px] font-bold text-primary uppercase tracking-wider mb-1">
                           Paso {index + 1}
                         </div>
                         <h3 className="text-xl font-semibold text-text-main mb-2">
