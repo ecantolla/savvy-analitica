@@ -67,8 +67,16 @@ export default function Dashboard() {
             ))}
           </div>
 
-          {/* Imagen + descripción debajo */}
+          {/* Descripción arriba + imagen abajo */}
           <div>
+            <div key={`text-${activeTab}`} className="mb-4 tab-text-enter">
+              <h3 className="text-lg font-semibold text-white mb-1.5">
+                {tabs[activeTab].label}
+              </h3>
+              <p className="text-white/70 leading-relaxed text-[15px]">
+                {tabs[activeTab].desc}
+              </p>
+            </div>
             <div
               key={`img-${activeTab}`}
               className="rounded-xl overflow-hidden tab-image-enter"
@@ -82,14 +90,6 @@ export default function Dashboard() {
                 className="w-full h-auto object-contain"
                 quality={93}
               />
-            </div>
-            <div key={`text-${activeTab}`} className="mt-5 tab-text-enter">
-              <h3 className="text-lg font-semibold text-white mb-1.5">
-                {tabs[activeTab].label}
-              </h3>
-              <p className="text-white/70 leading-relaxed text-[15px]">
-                {tabs[activeTab].desc}
-              </p>
             </div>
           </div>
         </div>
