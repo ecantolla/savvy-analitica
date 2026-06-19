@@ -70,7 +70,7 @@ export default function Pricing() {
                   {plan.range}
                 </p>
 
-                <div className="mb-6">
+                <div className="mb-6 text-center md:text-left">
                   <span className="text-4xl font-black text-text-main">{plan.price}</span>
                   <span className="text-text-muted font-medium"> /mes</span>
                 </div>

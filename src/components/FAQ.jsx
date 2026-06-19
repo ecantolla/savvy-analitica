@@ -10,7 +10,7 @@ export default function FAQ() {
   const faqs = [
     { q: "¿Savvy reemplaza mi POS actual?",           a: "No. Savvy se conecta a los datos de tu POS actual y los convierte en analítica avanzada. Tu operación diaria no cambia — solo ganas visibilidad e inteligencia sobre esa información." },
     { q: "¿Con qué sistemas POS es compatible?",       a: "Savvy es compatible con cualquier POS. Antes de la implementación evaluamos tu sistema actual para definir el tipo y costo de integración. En la demo te explicaremos el proceso completo." },
-    { q: "¿Cuánto tiempo tarda la implementación?",    a: "El proceso completo se estima en 20 días hábiles. Incluye la integración con tu POS, la configuración y la capacitación de tu equipo." },
+    { q: "¿Cuánto tiempo tarda la implementación?",    a: "El proceso completo se estima entre 15 y 20 días hábiles. Incluye la integración con tu POS, la configuración y la capacitación de tu equipo." },
     { q: "¿Cuántos locales necesito para usar Savvy?", a: "Savvy se puede utilizar desde 1 local en adelante." },
     { q: "¿Cómo se cobra la integración con el POS?",  a: "El costo de integración se evalúa según las características de tu sistema POS y se cotiza por separado del plan mensual. La integración se paga una vez." },
     { q: "¿Los precios incluyen IVA?",                 a: "No. Los precios indicados en UF no incluyen IVA. El valor en pesos varía según el valor de la UF del mes de facturación." },
