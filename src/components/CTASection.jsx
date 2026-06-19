@@ -10,9 +10,9 @@ export default function CTASection() {
 
   const points = [
     "Te conectamos en vivo con el dashboard",
-    "Analizamos el tipo de reportería que necesitas",
     "Te mostramos los indicadores más relevantes para tu negocio",
-    "Sin compromiso, sin presión de venta",
+    "Te explicamos el proceso de implementación paso a paso",
+    "Te respondemos todas tus preguntas",
   ];
 
   return (
@@ -98,6 +98,8 @@ export default function CTASection() {
                   </div>
                 ))}
               </div>
+
+              <p className="text-gray-300 text-base font-medium mb-8">Sin compromiso, sin presión de venta.</p>
 
               <div className="flex flex-col sm:flex-row sm:items-center gap-4">
                 <button
