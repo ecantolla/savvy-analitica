@@ -121,7 +121,7 @@ export default function Hero() {
                 onClick={() => setIsModalOpen(true)}
                 className="bg-primary hover:bg-primary/90 text-white px-8 py-4 rounded-full font-bold text-lg transition-all transform hover:-translate-y-1 shadow-lg"
               >
-                Agenda tu Demo Gratis →
+                Agenda tu demo gratis →
               </button>
               <p className="mt-4 text-sm text-text-muted font-medium">
                 Sin compromisos. Te mostramos cómo funciona y qué puede hacer por tu negocio.
@@ -175,7 +175,7 @@ export default function Hero() {
               onClick={() => setIsModalOpen(true)}
               className="w-full bg-primary hover:bg-primary/90 text-white px-8 py-4 rounded-full font-bold text-lg transition-all transform hover:-translate-y-1 shadow-lg"
             >
-              Agenda tu Demo Gratis →
+              Agenda tu demo gratis →
             </button>
             <p className="mt-4 text-sm text-text-muted font-medium">
               Sin compromisos. Te mostramos cómo funciona y qué puede hacer por tu negocio.

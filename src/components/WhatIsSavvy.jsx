@@ -11,7 +11,7 @@ const outcomes = [
   },
   {
     title: "Más margen, menos adivinanza",
-    desc: "Sabe exactamente qué productos y locales te dejan plata, y deja de gastar recursos donde no rinde.",
+    desc: "Sabrás exactamente qué productos y locales te dejan plata, y dejarás de gastar recursos donde no rinde.",
     icon: TrendingUp,
   },
   {

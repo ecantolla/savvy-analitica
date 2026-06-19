@@ -67,7 +67,7 @@ export default function Header() {
                 onClick={() => setIsModalOpen(true)}
                 className="bg-primary hover:bg-primary/90 text-white px-6 py-2.5 rounded-full font-medium transition-all transform hover:-translate-y-0.5 shadow-sm"
               >
-                Agenda tu Demo →
+                Agenda tu demo →
               </button>
             </div>
 
@@ -105,7 +105,7 @@ export default function Header() {
                   }}
                   className="w-full bg-primary hover:bg-primary/90 text-white px-6 py-3 rounded-full font-medium transition-colors"
                 >
-                  Agenda tu Demo →
+                  Agenda tu demo →
                 </button>
               </div>
             </div>

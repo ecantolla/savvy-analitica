@@ -106,7 +106,7 @@ export default function CTASection() {
                   onClick={() => setIsModalOpen(true)}
                   className="bg-primary hover:bg-primary/90 text-white px-8 py-4 rounded-full font-bold text-lg transition-all transform hover:-translate-y-1 shadow-[0_0_40px_-10px_rgba(0,191,165,0.5)]"
                 >
-                  Agenda tu Demo Gratis →
+                  Agenda tu demo gratis →
                 </button>
                 <a
                   href={`https://wa.me/${process.env.NEXT_PUBLIC_WHATSAPP_NUMBER?.replace("+", "")}?text=${encodeURIComponent(process.env.NEXT_PUBLIC_WHATSAPP_MESSAGE || "")}`}

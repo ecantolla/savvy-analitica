@@ -15,19 +15,19 @@ export default function Pricing() {
       popular: false,
     },
     {
-      name: "Base",
+      name: "Growth",
       range: "4 a 10 locales",
       price: "10 UF",
       popular: true,
     },
     {
-      name: "Mid",
+      name: "Pro",
       range: "11 a 20 locales",
       price: "15 UF",
       popular: false,
     },
     {
-      name: "Alto",
+      name: "Enterprise",
       range: "21 o más locales",
       price: "25 UF",
       popular: false,
@@ -37,7 +37,7 @@ export default function Pricing() {
   const features = [
     { label: "Panel de KPIs en tiempo real",        desc: "Venta total, ticket promedio, mesas y garzones por local" },
     { label: "Ventas comparadas",                   desc: "Día a día vs. mes anterior y mismo mes del año pasado" },
-    { label: "Análisis de productos",               desc: "Unidades vendidas por categoría, sub-categoría y producto" },
+    { label: "Análisis de productos",               desc: "Unidades vendidas por Categoría, Sub Categoría y Producto" },
     { label: "Medios de pago",                      desc: "Efectivo, débito, crédito, delivery y propinas desglosadas" },
     { label: "Indicadores mensuales",               desc: "Venta por turno y día de la semana para armar dotaciones" },
     { label: "KPIs operacionales",                  desc: "Correlaciones entre mesas, garzones, ticket y venta" },
@@ -90,7 +90,7 @@ export default function Pricing() {
                   onClick={() => setIsModalOpen(true)}
                   className="w-full py-3 rounded-xl font-bold transition-colors bg-primary hover:bg-primary/90 text-white"
                 >
-                  Agenda tu Demo →
+                  Agenda tu demo →
                 </button>
               </div>
             ))}

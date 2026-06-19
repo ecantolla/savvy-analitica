@@ -69,7 +69,7 @@ export default function Footer() {
                 onClick={() => setIsModalOpen(true)}
                 className="w-full sm:w-auto bg-primary hover:bg-primary/90 text-white px-8 py-3 rounded-full font-bold transition-all shadow-sm hover:shadow-md"
               >
-                Agenda tu Demo →
+                Agenda tu demo →
               </button>
             </div>
           </div>
