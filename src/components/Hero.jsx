@@ -84,7 +84,7 @@ export default function Hero() {
             </h1>
 
             <p className="text-lg sm:text-xl text-text-muted mb-10 font-medium">
-              Deja de gestionar con intuición y toma decisiones más rentables con datos reales de tu operación.
+              <span className="block">Deja de decidir solo con intuición.</span><span className="block">Gestiona cada local con datos reales y mejora tu rentabilidad.</span>
             </p>
 
             <div className="space-y-4 mb-10">
@@ -124,7 +124,7 @@ export default function Hero() {
           </h1>
 
           <p className="text-base sm:text-lg text-text-muted font-medium">
-            Deja de gestionar con intuición y toma decisiones más rentables con datos reales de tu operación.
+            <span className="block">Deja de decidir solo con intuición.</span><span className="block">Gestiona cada local con datos reales y mejora tu rentabilidad.</span>
           </p>
         </div>
 
