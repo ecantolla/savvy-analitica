@@ -6,6 +6,15 @@ import Image from "next/image";
 export default function Dashboard() {
   const [activeTab, setActiveTab] = useState(0);
 
+  const scrollToTop = () => {
+    document.getElementById("dashboard")?.scrollIntoView({ behavior: "smooth" });
+  };
+
+  const handleBottomTab = (id) => {
+    setActiveTab(id);
+    scrollToTop();
+  };
+
   const tabs = [
     { id: 0, label: "Ventas + Indicadores",   image: "vista1-ventas-indicadores.webp",  desc: "En la pantalla principal verás, en tiempo real, la venta del mes acumulada, el ticket promedio, el N° de mesas y personas atendidas, y los garzones utilizados por local. Lo más importante: comparado con el mes anterior y con el mismo mes del año pasado." },
     { id: 1, label: "Ventas Comparadas",       image: "vista2-ventas-comparadas.webp",   desc: "Compara la venta día a día de los últimos tres meses en una sola vista. No fecha contra fecha, sino sábado con sábado, viernes con viernes, exactamente cómo se comportan tus locales." },
@@ -50,13 +59,13 @@ export default function Dashboard() {
         {/* Desktop: botones horizontales → texto → imagen */}
         <div className="hidden lg:block">
 
-          {/* Botones en fila horizontal */}
-          <div className="flex flex-wrap gap-2 justify-center mb-8">
+          {/* Botones en una sola fila */}
+          <div className="flex gap-1.5 justify-center mb-8">
             {tabs.map((tab) => (
               <button
                 key={tab.id}
                 onClick={() => setActiveTab(tab.id)}
-                className={`px-4 py-2 rounded-full text-sm font-semibold transition-all duration-200 whitespace-nowrap ${
+                className={`px-3 py-1.5 rounded-full text-xs font-semibold transition-all duration-200 whitespace-nowrap ${
                   activeTab === tab.id
                     ? "bg-primary text-white shadow-lg shadow-primary/25"
                     : "text-white/60 border border-white/35 hover:text-white hover:bg-white/10"
@@ -68,7 +77,7 @@ export default function Dashboard() {
           </div>
 
           {/* Texto descriptivo */}
-          <div key={`text-${activeTab}`} className="text-center max-w-2xl mx-auto mb-6 tab-text-enter">
+          <div key={`text-${activeTab}`} className="mb-6 tab-text-enter">
             <h3 className="text-lg font-semibold text-white mb-1.5">
               {tabs[activeTab].label}
             </h3>
@@ -91,6 +100,23 @@ export default function Dashboard() {
               className="w-full h-auto object-contain"
               quality={93}
             />
+          </div>
+
+          {/* Botones repetidos debajo de la imagen */}
+          <div className="flex gap-1.5 justify-center mt-8">
+            {tabs.map((tab) => (
+              <button
+                key={tab.id}
+                onClick={() => handleBottomTab(tab.id)}
+                className={`px-3 py-1.5 rounded-full text-xs font-semibold transition-all duration-200 whitespace-nowrap ${
+                  activeTab === tab.id
+                    ? "bg-primary text-white shadow-lg shadow-primary/25"
+                    : "text-white/60 border border-white/35 hover:text-white hover:bg-white/10"
+                }`}
+              >
+                {tab.label}
+              </button>
+            ))}
           </div>
         </div>
 
