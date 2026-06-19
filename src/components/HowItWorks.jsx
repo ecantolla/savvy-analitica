@@ -3,6 +3,17 @@
 import Image from "next/image";
 import { Plug, SlidersHorizontal, GraduationCap } from "lucide-react";
 
+function PosCallout() {
+  return (
+    <div className="inline-flex items-start gap-3 bg-primary/5 ring-1 ring-primary/15 rounded-xl px-4 py-3 text-left">
+      <Plug className="text-primary flex-shrink-0 mt-0.5" size={20} />
+      <p className="text-[15px] font-semibold text-text-main leading-snug">
+        No necesitas cambiar tu POS. Savvy <span className="text-primary">potencia el sistema que ya usas.</span>
+      </p>
+    </div>
+  );
+}
+
 export default function HowItWorks() {
   const steps = [
     {
@@ -24,57 +35,33 @@ export default function HowItWorks() {
 
   return (
     <section className="py-24 bg-white relative overflow-hidden">
-      <style>{`
-        @media (max-width: 1023px) {
-          .hiw-container {
-            display: flex;
-            flex-direction: column;
-          }
-          .hiw-title-mobile {
-            order: 1;
-          }
-          .hiw-image {
-            order: 2;
-            margin-top: 1.5rem;
-          }
-          .hiw-subtitle-mobile {
-            order: 3;
-            margin-top: 1.5rem;
-          }
-          .hiw-steps {
-            order: 4;
-          }
-          .hiw-title-desktop,
-          .hiw-subtitle-desktop {
-            display: none;
-          }
-        }
-        @media (min-width: 1024px) {
-          .hiw-container {
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-            gap: 4rem;
-            align-items: center;
-          }
-          .hiw-title-mobile,
-          .hiw-subtitle-mobile {
-            display: none;
-          }
-        }
-      `}</style>
-
       <div className="absolute top-0 right-0 w-[500px] h-[500px] bg-primary/5 rounded-full blur-3xl -translate-y-1/3 translate-x-1/3 pointer-events-none" />
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
-        <div className="hiw-container gap-12">
+
+        {/* Desktop: encabezado centrado */}
+        <div className="hidden lg:block text-center mb-16">
+          <h2 className="text-3xl md:text-[2.75rem] font-bold text-text-main mt-3 mb-5 leading-[1.1] tracking-tight whitespace-nowrap">
+            Decisiones basadas en datos, sin esfuerzo
+          </h2>
+          <p className="text-xl text-text-muted leading-relaxed max-w-2xl mx-auto">
+            Sin interrupciones en tu operación. El proceso es simple, guiado y tú solo tienes que aprobar.
+          </p>
+          <div className="mt-8 flex justify-center">
+            <PosCallout />
+          </div>
+        </div>
+
+        {/* Contenido: imagen + pasos */}
+        <div className="flex flex-col lg:grid lg:grid-cols-2 lg:gap-16 lg:items-center">
 
           {/* Mobile: título */}
-          <h2 className="hiw-title-mobile text-3xl font-bold text-text-main leading-[1.1] tracking-tight">
+          <h2 className="lg:hidden order-1 text-3xl font-bold text-text-main leading-[1.1] tracking-tight text-center">
             Decisiones basadas en datos, sin esfuerzo
           </h2>
 
           {/* Imagen */}
-          <div className="hiw-image relative">
+          <div className="order-2 lg:order-1 mt-6 lg:mt-0 relative">
             <div className="absolute -inset-4 bg-secondary/10 rounded-[2rem] rotate-2" />
             <div className="relative rounded-3xl overflow-hidden shadow-2xl shadow-secondary/10 ring-1 ring-black/5">
               <Image
@@ -88,27 +75,17 @@ export default function HowItWorks() {
           </div>
 
           {/* Mobile: subtítulo */}
-          <p className="hiw-subtitle-mobile text-xl text-text-muted leading-relaxed">
+          <p className="lg:hidden order-3 mt-6 text-xl text-text-muted leading-relaxed">
             Sin interrupciones en tu operación. El proceso es simple, guiado y tú solo tienes que aprobar.
           </p>
 
-          {/* Pasos (desktop incluye título y subtítulo) */}
-          <div className="hiw-steps">
-            <h2 className="hiw-title-desktop text-3xl md:text-[2.75rem] font-bold text-text-main mt-3 mb-4 leading-[1.1] tracking-tight text-balance">
-              Decisiones basadas en datos, sin esfuerzo
-            </h2>
-            <p className="hiw-subtitle-desktop text-xl text-text-muted leading-relaxed mb-6">
-              Sin interrupciones en tu operación. El proceso es simple, guiado y tú solo tienes que aprobar.
-            </p>
+          {/* Mobile: callout POS */}
+          <div className="lg:hidden order-4 mt-6">
+            <PosCallout />
+          </div>
 
-            {/* Reaseguro: no necesitas cambiar tu POS */}
-            <div className="flex items-start gap-3 bg-primary/5 ring-1 ring-primary/15 rounded-xl px-4 py-3 mt-6 lg:mt-0 mb-9">
-              <Plug className="text-primary flex-shrink-0 mt-0.5" size={20} />
-              <p className="text-[15px] font-semibold text-text-main leading-snug">
-                No necesitas cambiar tu POS. Savvy <span className="text-primary">potencia el sistema que ya usas.</span>
-              </p>
-            </div>
-
+          {/* Pasos */}
+          <div className="order-5 lg:order-2 mt-10 lg:mt-0">
             <div className="relative">
               <div className="absolute left-7 top-7 bottom-7 w-px bg-gradient-to-b from-primary/40 to-primary/10" />
               <div className="space-y-8">
