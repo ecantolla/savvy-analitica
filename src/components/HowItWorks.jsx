@@ -18,7 +18,7 @@ export default function HowItWorks() {
     {
       icon: GraduationCap,
       title: "Puesta en marcha y capacitación",
-      desc: "Capacitamos a tu equipo para que aproveche al máximo la plataforma. En 20 días hábiles estás operando con datos reales.",
+      desc: "Capacitamos a tu equipo para que aproveche al máximo la plataforma. En pocas semanas estás operando con datos reales.",
     },
   ];
 
@@ -45,7 +45,7 @@ export default function HowItWorks() {
           {/* Pasos */}
           <div className="order-1 lg:order-2">
             <h2 className="text-3xl md:text-[2.75rem] font-bold text-text-main mt-3 mb-4 leading-[1.1] tracking-tight text-balance">
-              Operativo en 20 días hábiles
+              Decisiones basadas en datos, sin esfuerzo
             </h2>
             <p className="text-xl text-text-muted leading-relaxed mb-10">
               Sin interrupciones en tu operación. El proceso es simple, guiado y

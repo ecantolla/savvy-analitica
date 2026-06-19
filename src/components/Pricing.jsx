@@ -43,7 +43,7 @@ export default function Pricing() {
     { label: "KPIs operacionales",                  desc: "Correlaciones entre mesas, garzones, ticket y venta" },
     { label: "Análisis de categorías",              desc: "Qué categorías rinden en cada local y en qué período" },
     { label: "Comparación entre locales",           desc: "Ranking de sucursales por venta, ticket y rentabilidad" },
-    { label: "Implementación y capacitación",       desc: "Operativo en 20 días hábiles, tu equipo capacitado" },
+    { label: "Implementación y capacitación",       desc: "Operativo en pocas semanas, tu equipo capacitado" },
   ];
 
   return (
