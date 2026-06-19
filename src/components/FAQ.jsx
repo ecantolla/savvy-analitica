@@ -48,26 +48,26 @@ export default function FAQ() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
 
         {/* Header */}
-        <div className="flex flex-col lg:flex-row lg:items-center lg:justify-between gap-6 mb-12">
-          <div className="max-w-xl">
-            <h2 className="text-3xl md:text-[2.75rem] font-bold text-text-main mt-3 mb-4 leading-[1.1] tracking-tight text-balance">
-              Preguntas frecuentes
-            </h2>
-            <p className="text-xl text-text-muted leading-relaxed">
-              Todo lo que necesitas saber antes de tu demo. Si tienes más preguntas,
-              escríbenos por WhatsApp, respondemos rápido.
-            </p>
+        <div className="text-center max-w-2xl mx-auto mb-12">
+          {/* Ilustración */}
+          <div className="flex justify-center mb-5">
+            <div className="w-28 h-28 relative">
+              <Image
+                src="/img/s9-faq.webp"
+                alt=""
+                fill
+                className="object-contain"
+                sizes="112px"
+              />
+            </div>
           </div>
-          {/* Ilustración pequeña — decorativa */}
-          <div className="hidden lg:block flex-shrink-0 w-40 h-40 relative">
-            <Image
-              src="/img/s9-faq.webp"
-              alt=""
-              fill
-              className="object-contain object-center"
-              sizes="160px"
-            />
-          </div>
+          <h2 className="text-3xl md:text-[2.75rem] font-bold text-text-main mb-4 leading-[1.1] tracking-tight text-balance">
+            Preguntas frecuentes
+          </h2>
+          <p className="text-xl text-text-muted leading-relaxed">
+            Todo lo que necesitas saber antes de tu demo. Si tienes más preguntas,
+            escríbenos por WhatsApp, respondemos rápido.
+          </p>
         </div>
 
         {/* Preguntas: 2 columnas en desktop, 1 en mobile */}

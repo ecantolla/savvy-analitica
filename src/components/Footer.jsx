@@ -16,7 +16,7 @@ export default function Footer() {
           <div className="grid grid-cols-1 md:grid-cols-12 gap-12 lg:gap-8 mb-16">
 
             {/* Col 1: Marca */}
-            <div className="md:col-span-5 lg:col-span-4">
+            <div className="md:col-span-5 lg:col-span-4 text-center md:text-left">
               <Link href="/" className="inline-block mb-6">
                 <Image
                   src="/img/1-Logo-Savvy-Azul.png"
@@ -26,7 +26,7 @@ export default function Footer() {
                   className="h-12 w-auto brightness-0 invert"
                 />
               </Link>
-              <p className="text-sm leading-relaxed max-w-sm" style={{ color: "rgba(255,255,255,0.6)" }}>
+              <p className="text-sm leading-relaxed max-w-sm mx-auto md:mx-0" style={{ color: "rgba(255,255,255,0.6)" }}>
                 Plataforma de analítica comercial diseñada para cadenas de restaurantes, cafeterías y heladerías.
               </p>
             </div>
