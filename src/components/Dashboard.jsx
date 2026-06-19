@@ -86,7 +86,22 @@ export default function Dashboard() {
             </p>
           </div>
 
-          {/* Imagen */}
+          {/* Preload oculto de todas las imágenes */}
+          <div className="hidden" aria-hidden="true">
+            {tabs.map((tab) => (
+              <Image
+                key={`preload-${tab.id}`}
+                src={`/img/${tab.image}`}
+                alt=""
+                width={1600}
+                height={900}
+                quality={93}
+                sizes="(max-width: 1280px) 100vw, 1280px"
+              />
+            ))}
+          </div>
+
+          {/* Imagen activa */}
           <div
             key={`img-${activeTab}`}
             className="rounded-xl overflow-hidden tab-image-enter"
@@ -99,6 +114,8 @@ export default function Dashboard() {
               height={900}
               className="w-full h-auto object-contain"
               quality={93}
+              sizes="(max-width: 1280px) 100vw, 1280px"
+              priority={activeTab === 0}
             />
           </div>
 
