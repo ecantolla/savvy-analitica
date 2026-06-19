@@ -33,9 +33,9 @@ export default function WhatIsSavvy() {
         {/* Header a todo el ancho */}
         <div className="md:text-center max-w-4xl mx-auto mb-16">
           <h2 className="text-3xl md:text-[2.75rem] font-bold text-text-main mt-3 mb-5 leading-[1.1] tracking-tight text-center">
-            <span className="md:block">Controla tu operación.</span>{" "}
-            <span className="md:block">Protege tu margen.</span>{" "}
-            <span className="md:block">Crece con inteligencia.</span>
+            <span style={{ display: "block" }}>Controla tu operación.</span>
+            <span style={{ display: "block" }}>Protege tu margen.</span>
+            <span style={{ display: "block" }}>Crece con inteligencia.</span>
           </h2>
           <p className="text-xl text-text-muted leading-relaxed max-w-2xl mx-auto text-center">
             Savvy se conecta a tu POS y transforma cada transacción en información
