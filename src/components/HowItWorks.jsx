@@ -97,11 +97,19 @@ export default function HowItWorks() {
             <h2 className="hiw-title-desktop text-3xl md:text-[2.75rem] font-bold text-text-main mt-3 mb-4 leading-[1.1] tracking-tight text-balance">
               Decisiones basadas en datos, sin esfuerzo
             </h2>
-            <p className="hiw-subtitle-desktop text-xl text-text-muted leading-relaxed mb-10">
+            <p className="hiw-subtitle-desktop text-xl text-text-muted leading-relaxed mb-6">
               Sin interrupciones en tu operación. El proceso es simple, guiado y tú solo tienes que aprobar.
             </p>
 
-            <div className="relative mt-10 lg:mt-0">
+            {/* Reaseguro: no necesitas cambiar tu POS */}
+            <div className="flex items-start gap-3 bg-primary/5 ring-1 ring-primary/15 rounded-xl px-4 py-3 mt-6 lg:mt-0 mb-9">
+              <Plug className="text-primary flex-shrink-0 mt-0.5" size={20} />
+              <p className="text-[15px] font-semibold text-text-main leading-snug">
+                No necesitas cambiar tu POS. Savvy <span className="text-primary">potencia el sistema que ya usas.</span>
+              </p>
+            </div>
+
+            <div className="relative">
               <div className="absolute left-7 top-7 bottom-7 w-px bg-gradient-to-b from-primary/40 to-primary/10" />
               <div className="space-y-8">
                 {steps.map((step, index) => {

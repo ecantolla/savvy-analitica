@@ -2,7 +2,7 @@
 
 import { useState } from "react";
 import ContactModal from "./ContactModal";
-import { CheckCircle2, ShieldCheck, Utensils } from "lucide-react";
+import { CheckCircle2, Plug, Zap } from "lucide-react";
 
 export default function Hero() {
   const [isModalOpen, setIsModalOpen] = useState(false);
@@ -112,7 +112,7 @@ export default function Hero() {
               </div>
               <div className="flex items-center gap-3">
                 <CheckCircle2 className="text-primary flex-shrink-0" size={24} />
-                <span className="text-text-main font-medium">Toma decisiones que hacen crecer tu negocio</span>
+                <span className="text-text-main font-medium">Diseñado para gastronomía</span>
               </div>
             </div>
 
@@ -166,7 +166,7 @@ export default function Hero() {
             </div>
             <div className="flex items-center gap-3">
               <CheckCircle2 className="text-primary flex-shrink-0" size={24} />
-              <span className="text-text-main font-medium">Toma decisiones que hacen crecer tu negocio</span>
+              <span className="text-text-main font-medium">Diseñado para gastronomía</span>
             </div>
           </div>
 
@@ -188,16 +188,16 @@ export default function Hero() {
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="flex flex-col md:flex-row justify-center items-center divide-y md:divide-y-0 md:divide-x divide-gray-300">
               <div className="flex items-center gap-3 px-8 py-2 md:py-0 w-full md:w-auto justify-center">
-                <ShieldCheck className="text-primary" size={20} />
-                <span className="font-semibold text-text-main text-sm uppercase tracking-wide">Datos en tiempo real</span>
+                <CheckCircle2 className="text-primary" size={20} />
+                <span className="font-semibold text-text-main text-sm uppercase tracking-wide">Sin migraciones</span>
               </div>
               <div className="flex items-center gap-3 px-8 py-2 md:py-0 w-full md:w-auto justify-center">
-                <ShieldCheck className="text-primary" size={20} />
-                <span className="font-semibold text-text-main text-sm uppercase tracking-wide">Información segura</span>
+                <Plug className="text-primary" size={20} />
+                <span className="font-semibold text-text-main text-sm uppercase tracking-wide">Sin cambiar de sistema</span>
               </div>
               <div className="flex items-center gap-3 px-8 py-2 md:py-0 w-full md:w-auto justify-center">
-                <Utensils className="text-primary" size={20} />
-                <span className="font-semibold text-text-main text-sm uppercase tracking-wide">Diseñado para gastronomía</span>
+                <Zap className="text-primary" size={20} />
+                <span className="font-semibold text-text-main text-sm uppercase tracking-wide">Potencia tu POS actual</span>
               </div>
             </div>
           </div>
