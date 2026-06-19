@@ -79,7 +79,7 @@ export default function Hero() {
         <div className="hero-relative-content relative z-10 w-full flex-grow flex items-center">
           <div className="w-full md:w-1/2 lg:w-2/5 py-12 md:py-24 px-8 md:px-12 lg:px-16 xl:px-20">
             <h1 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-text-main leading-tight mb-6">
-              <span className="block mb-2">Savvy</span>
+              <span className="block mb-2 text-4xl sm:text-5xl lg:text-6xl">Savvy</span>
               Analítica comercial para <span className="text-secondary">restaurantes, cafeterías y heladerías.</span>
             </h1>
 
@@ -119,7 +119,7 @@ export default function Hero() {
         {/* Mobile Title and Description */}
         <div className="hero-title-description">
           <h1 className="text-3xl sm:text-4xl font-bold text-text-main leading-tight mb-4">
-            <span className="block">Savvy</span>
+            <span className="block text-4xl sm:text-5xl">Savvy</span>
             Analítica comercial para <span className="text-secondary">restaurantes, cafeterías y heladerías.</span>
           </h1>
 
