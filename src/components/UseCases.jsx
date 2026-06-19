@@ -72,6 +72,16 @@ export default function UseCases() {
           <h2 className="text-3xl md:text-[2.75rem] font-bold text-text-main mt-3 mb-5 leading-[1.1] tracking-tight text-balance">
             ¿Para qué sirve Savvy?
           </h2>
+          {/* Círculo (mobile, entre título y subtítulo) */}
+          <div className="lg:hidden relative w-full max-w-[260px] mx-auto aspect-square mb-5">
+            <Image
+              src="/img/Circulo_Savvy.webp"
+              alt="Círculo con las nueve razones para usar Savvy"
+              fill
+              sizes="260px"
+              className="object-contain"
+            />
+          </div>
           <p className="text-xl text-text-muted leading-relaxed">
             Nueve razones concretas por las que los directivos y dueños de cadenas gastronómicas eligen Savvy.
           </p>
