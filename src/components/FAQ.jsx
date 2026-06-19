@@ -8,13 +8,13 @@ export default function FAQ() {
   const [openIndex, setOpenIndex] = useState(null);
 
   const faqs = [
-    { q: "¿Savvy reemplaza mi POS actual?",           a: "No. Savvy se conecta a los datos de tu POS actual y los convierte en analítica avanzada. Tu operación diaria no cambia — solo ganas visibilidad e inteligencia sobre esa información." },
+    { q: "¿Savvy reemplaza mi POS actual?",           a: "No. Savvy se conecta a los datos de tu POS actual y los convierte en analítica avanzada. Tu operación diaria no cambia, solo ganas visibilidad e inteligencia sobre esa información." },
     { q: "¿Con qué sistemas POS es compatible?",       a: "Savvy es compatible con cualquier POS. Antes de la implementación evaluamos tu sistema actual para definir el tipo y costo de integración. En la demo te explicaremos el proceso completo." },
     { q: "¿Cuánto tiempo tarda la implementación?",    a: "El proceso completo se estima entre 15 y 20 días hábiles. Incluye la integración con tu POS, la configuración y la capacitación de tu equipo." },
     { q: "¿Cuántos locales necesito para usar Savvy?", a: "Savvy se puede utilizar desde 1 local en adelante." },
     { q: "¿Cómo se cobra la integración con el POS?",  a: "El costo de integración se evalúa según las características de tu sistema POS y se cotiza por separado del plan mensual. La integración se paga una vez." },
     { q: "¿Los precios incluyen IVA?",                 a: "No. Los precios indicados en UF no incluyen IVA. El valor en pesos varía según el valor de la UF del mes de facturación." },
-    { q: "¿Qué pasa si crezco y agrego más locales?",  a: "Los planes están diseñados para crecer contigo. Si superas el rango de tu plan actual, simplemente migras al siguiente — el equipo de Savvy te avisa cuando corresponde." },
+    { q: "¿Qué pasa si crezco y agrego más locales?",  a: "Los planes están diseñados para crecer contigo. Si superas el rango de tu plan actual, simplemente migras al siguiente. El equipo de Savvy te avisa cuando corresponde." },
     { q: "¿Qué tan difícil es usar el dashboard?",     a: "Savvy está diseñado para que cualquier persona de gestión pueda usarlo sin conocimientos técnicos. Los indicadores ya están configurados y la capacitación cubre todo lo que necesitas." },
     { q: "¿Puedo ver datos históricos de mi negocio?", a: "Sí. Savvy permite analizar datos históricos para comparar períodos, detectar tendencias y tomar decisiones con contexto real. El alcance depende de los datos disponibles en tu POS." },
     { q: "¿Cómo puedo ver Savvy antes de decidir?",    a: "Agenda una demo gratuita. En menos de 30 minutos te mostramos la plataforma en acción con datos reales, respondemos todas tus preguntas y te explicamos cómo se vería con tu cadena." },
@@ -55,7 +55,7 @@ export default function FAQ() {
             </h2>
             <p className="text-xl text-text-muted leading-relaxed">
               Todo lo que necesitas saber antes de tu demo. Si tienes más preguntas,
-              escríbenos por WhatsApp — respondemos rápido.
+              escríbenos por WhatsApp, respondemos rápido.
             </p>
           </div>
           {/* Ilustración pequeña — decorativa */}

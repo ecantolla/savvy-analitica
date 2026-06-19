@@ -6,7 +6,7 @@ import { Eye, TrendingUp, FileX, Radar } from "lucide-react";
 const outcomes = [
   {
     title: "Control total, en tiempo real",
-    desc: "Ve qué pasa en cada local —ventas, márgenes, rendimiento— sin moverte de tu oficina.",
+    desc: "Ve qué pasa en cada local (ventas, márgenes, rendimiento) sin moverte de tu oficina.",
     icon: Eye,
   },
   {
@@ -21,7 +21,7 @@ const outcomes = [
   },
   {
     title: "Te adelantas a los problemas",
-    desc: "Detecta caídas, desvíos y oportunidades antes de que se vuelvan obvias —o costosas.",
+    desc: "Detecta caídas, desvíos y oportunidades antes de que se vuelvan obvias o costosas.",
     icon: Radar,
   },
 ];

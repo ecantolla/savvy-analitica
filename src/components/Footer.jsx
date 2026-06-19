@@ -76,7 +76,7 @@ export default function Footer() {
 
           <div className="pt-8 flex flex-col md:flex-row justify-between items-center gap-4" style={{ borderTop: "1px solid rgba(255,255,255,0.1)" }}>
             <p className="text-xs text-center md:text-left" style={{ color: "rgba(255,255,255,0.4)" }}>
-              © 2026 SAVVY — Analítica Comercial. Todos los derechos reservados.
+              © 2026 SAVVY Analítica Comercial. Todos los derechos reservados.
             </p>
             <div className="flex gap-5 flex-shrink-0">
               <a href="/privacidad" className="text-xs transition-colors hover:text-white/60" style={{ color: "rgba(255,255,255,0.3)" }}>

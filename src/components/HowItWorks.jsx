@@ -8,12 +8,12 @@ export default function HowItWorks() {
     {
       icon: Plug,
       title: "Conexión con tu POS",
-      desc: "Evaluamos tu sistema actual y definimos la integración. Savvy es compatible con cualquier POS — el costo se evalúa caso a caso.",
+      desc: "Evaluamos tu sistema actual y definimos la integración. Savvy es compatible con cualquier POS, el costo se evalúa caso a caso.",
     },
     {
       icon: SlidersHorizontal,
       title: "Configuración",
-      desc: "Configuramos Savvy con la estructura de tu cadena — locales, categorías y productos. La plataforma ya viene con todos los indicadores listos.",
+      desc: "Configuramos Savvy con la estructura de tu cadena: locales, categorías y productos. La plataforma ya viene con todos los indicadores listos.",
     },
     {
       icon: GraduationCap,

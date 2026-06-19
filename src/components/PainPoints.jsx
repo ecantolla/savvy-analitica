@@ -8,8 +8,8 @@ import {
 
 export default function PainPoints() {
   const painPoints = [
-    { icon: Store,           title: "No sé qué pasa en cada local ahora mismo",       description: "Tienes varios locales y no puedes estar en todos. Cuando algo sale mal, te enteras tarde — o por un WhatsApp del encargado." },
-    { icon: BrainCircuit,    title: "Tomo decisiones con el estómago, no con datos",   description: "Cambias un producto, modificas un turno, abres un local — basado en intuición. Sin saber si los números te dan la razón." },
+    { icon: Store,           title: "No sé qué pasa en cada local ahora mismo",       description: "Tienes varios locales y no puedes estar en todos. Cuando algo sale mal, te enteras tarde, o por un WhatsApp del encargado." },
+    { icon: BrainCircuit,    title: "Tomo decisiones con el estómago, no con datos",   description: "Cambias un producto, modificas un turno, abres un local, basado en intuición. Sin saber si los números te dan la razón." },
     { icon: FileSpreadsheet, title: "Cada semana alguien arma una planilla distinta",  description: "El administrador tiene su versión, el gerente la suya. Nunca cuadran. Pierdes horas reconciliando datos en vez de analizarlos." },
     { icon: TrendingDown,    title: "No sé qué productos me dejan plata de verdad",    description: "Vendes mucho de un plato pero no sabes si te conviene. No tienes claro qué categorías sostienen el negocio." },
     { icon: UsersRound,      title: "Armo los equipos por costumbre, no por datos",    description: "Los sábados sobra gente, los miércoles al almuerzo falta. Sin venta por turno y día, la dotación siempre es un estimado." },

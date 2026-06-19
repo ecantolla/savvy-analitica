@@ -18,6 +18,39 @@ export default function CTASection() {
   return (
     <>
       <section className="py-24 bg-dark-bg text-white relative overflow-hidden">
+        <style>{`
+          @media (max-width: 1023px) {
+            .cta-container {
+              display: flex;
+              flex-direction: column;
+            }
+            .cta-title-mobile {
+              order: 1;
+            }
+            .cta-image {
+              order: 2;
+              margin-top: 1.5rem;
+            }
+            .cta-body {
+              order: 3;
+            }
+            .cta-title-desktop {
+              display: none;
+            }
+          }
+          @media (min-width: 1024px) {
+            .cta-container {
+              display: grid;
+              grid-template-columns: 1fr 1fr;
+              gap: 4rem;
+              align-items: center;
+            }
+            .cta-title-mobile {
+              display: none;
+            }
+          }
+        `}</style>
+
         {/* Patrón de puntos */}
         <div className="absolute inset-0 opacity-10" style={{ backgroundImage: "radial-gradient(#ffffff 1px, transparent 1px)", backgroundSize: "32px 32px" }} />
         {/* Glow */}
@@ -25,14 +58,34 @@ export default function CTASection() {
         <div className="absolute bottom-0 left-0 w-96 h-96 bg-secondary/20 rounded-full blur-[100px] translate-y-1/2 -translate-x-1/2 pointer-events-none" />
 
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
-          <div className="grid lg:grid-cols-2 gap-12 lg:gap-16 items-center">
+          <div className="cta-container gap-12">
+
+            {/* Mobile: título */}
+            <h2 className="cta-title-mobile text-3xl font-bold leading-[1.1] tracking-tight">
+              ¿Listo para gestionar tu cadena con datos reales?
+            </h2>
+
+            {/* Imagen */}
+            <div className="cta-image relative">
+              <div className="absolute -inset-4 bg-primary/10 rounded-[2rem] rotate-2" />
+              <div className="relative rounded-3xl overflow-hidden shadow-2xl ring-1 ring-white/10">
+                <Image
+                  src="/img/s8-cta.webp"
+                  alt="Dueño de cafetería revisando con tranquilidad el crecimiento de sus ventas en Savvy"
+                  width={1200}
+                  height={680}
+                  className="w-full h-auto object-cover"
+                />
+              </div>
+            </div>
+
             {/* Texto + CTA */}
-            <div>
-              <h2 className="text-3xl md:text-[2.75rem] font-bold mb-5 leading-[1.1] tracking-tight text-balance">
+            <div className="cta-body">
+              <h2 className="cta-title-desktop text-3xl md:text-[2.75rem] font-bold mb-5 leading-[1.1] tracking-tight text-balance">
                 ¿Listo para gestionar tu cadena con datos reales?
               </h2>
-              <p className="text-xl text-gray-300 mb-8 leading-relaxed">
-                Agenda una demo gratuita y te mostramos Savvy en acción —con datos reales,
+              <p className="text-xl text-gray-300 mb-8 leading-relaxed mt-6 lg:mt-0">
+                Agenda una demo gratuita y te mostramos Savvy en acción, con datos reales,
                 sin presentaciones genéricas. En menos de 30 minutos verás exactamente cómo
                 puede transformar la gestión de tu cadena.
               </p>
@@ -64,19 +117,6 @@ export default function CTASection() {
               </div>
             </div>
 
-            {/* Imagen */}
-            <div className="relative">
-              <div className="absolute -inset-4 bg-primary/10 rounded-[2rem] rotate-2" />
-              <div className="relative rounded-3xl overflow-hidden shadow-2xl ring-1 ring-white/10">
-                <Image
-                  src="/img/s8-cta.webp"
-                  alt="Dueño de cafetería revisando con tranquilidad el crecimiento de sus ventas en Savvy"
-                  width={1200}
-                  height={680}
-                  className="w-full h-auto object-cover"
-                />
-              </div>
-            </div>
           </div>
         </div>
       </section>
