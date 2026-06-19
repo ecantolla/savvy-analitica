@@ -1,7 +1,7 @@
 "use client";
 
 import Image from "next/image";
-import { Plug, SlidersHorizontal, GraduationCap } from "lucide-react";
+import { Plug, SlidersHorizontal, GraduationCap, HeadphonesIcon } from "lucide-react";
 
 function PosCallout() {
   return (
@@ -30,6 +30,11 @@ export default function HowItWorks() {
       icon: GraduationCap,
       title: "Puesta en marcha y capacitación",
       desc: "Capacitamos a tu equipo para que aproveche al máximo la plataforma. En pocas semanas estás operando con datos reales.",
+    },
+    {
+      icon: HeadphonesIcon,
+      title: "Soporte. No estás solo.",
+      desc: "Una vez en marcha, el equipo de Savvy está disponible para dar soporte de continuidad operacional, resolver dudas y todo lo que necesites para sacarle el máximo partido a la plataforma.",
     },
   ];
 
