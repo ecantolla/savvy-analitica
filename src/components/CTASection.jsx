@@ -112,9 +112,9 @@ export default function CTASection() {
                   href={`https://wa.me/${process.env.NEXT_PUBLIC_WHATSAPP_NUMBER?.replace("+", "")}?text=${encodeURIComponent(process.env.NEXT_PUBLIC_WHATSAPP_MESSAGE || "")}`}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="text-gray-400 hover:text-white transition-colors text-sm font-medium"
+                  className="text-gray-400 hover:text-white transition-colors text-sm font-medium text-center sm:text-left"
                 >
-                  O escríbenos al WhatsApp →
+                  O escríbenos al WhatsApp
                 </a>
               </div>
             </div>
