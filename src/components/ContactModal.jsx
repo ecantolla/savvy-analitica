@@ -66,7 +66,7 @@ export default function ContactModal({ isOpen, onClose }) {
         <div className="p-8">
           <h2 className="text-2xl font-bold text-text-main mb-1">Agenda tu demo gratuita</h2>
           <p className="text-text-muted mb-7 text-[15px]">
-            En menos de 30 minutos te mostramos Savvy con datos reales de tu tipo de negocio.
+            En menos de 30 minutos te mostramos Savvy con datos reales de un negocio como el tuyo.
           </p>
 
           {/* WhatsApp — ARRIBA */}
