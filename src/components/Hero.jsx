@@ -184,18 +184,18 @@ export default function Hero() {
         </div>
 
         {/* Trust Bar */}
-        <div className="hero-trust-bar relative z-10 mt-auto bg-white/80 backdrop-blur-md border-t border-gray-200 py-4">
+        <div className="hero-trust-bar relative z-10 mt-auto bg-white/80 backdrop-blur-md border-t border-gray-200 py-0 md:py-4">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="flex flex-col md:flex-row justify-center items-center divide-y md:divide-y-0 md:divide-x divide-gray-300">
-              <div className="flex items-center gap-3 px-8 py-2 md:py-0 w-full md:w-auto justify-center">
+              <div className="flex items-center gap-3 px-8 py-3 md:py-0 w-full md:w-auto justify-center">
                 <CheckCircle2 className="text-primary" size={20} />
                 <span className="font-semibold text-text-main text-sm uppercase tracking-wide">Sin migraciones</span>
               </div>
-              <div className="flex items-center gap-3 px-8 py-2 md:py-0 w-full md:w-auto justify-center">
+              <div className="flex items-center gap-3 px-8 py-3 md:py-0 w-full md:w-auto justify-center">
                 <Plug className="text-primary" size={20} />
                 <span className="font-semibold text-text-main text-sm uppercase tracking-wide">Sin cambiar de sistema</span>
               </div>
-              <div className="flex items-center gap-3 px-8 py-2 md:py-0 w-full md:w-auto justify-center">
+              <div className="flex items-center gap-3 px-8 py-3 md:py-0 w-full md:w-auto justify-center">
                 <Zap className="text-primary" size={20} />
                 <span className="font-semibold text-text-main text-sm uppercase tracking-wide">Potencia tu POS actual</span>
               </div>

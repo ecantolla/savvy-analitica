@@ -23,7 +23,7 @@ export default function PainPoints() {
         {/* Header — 2 columnas: texto + foto */}
         <div className="grid lg:grid-cols-2 gap-10 lg:gap-16 items-center mb-16">
           <div>
-            <h2 className="text-3xl md:text-[2.75rem] font-bold text-text-main mb-5 leading-[1.1] tracking-tight text-balance">
+            <h2 className="text-3xl md:text-[2.75rem] font-bold text-text-main mb-5 leading-[1.1] tracking-tight text-balance text-center md:text-left">
               Los 6 dolores de cabeza que Savvy elimina
             </h2>
             <p className="text-xl text-text-muted leading-relaxed">
