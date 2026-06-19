@@ -20,7 +20,7 @@ export default function Hero() {
           .hero-bg-img {
             display: none;
           }
-          .hero-title-description {
+          .hero-mobile-title {
             background-color: white;
             padding: 2rem 2rem 1rem;
             position: relative;
@@ -34,18 +34,26 @@ export default function Hero() {
             order: 2;
             transform: scale(1.08);
           }
+          .hero-mobile-subtitle {
+            background-color: white;
+            padding: 1.25rem 2rem 0;
+            order: 3;
+          }
           .hero-features {
             background-color: white;
-            padding: 2rem;
+            padding: 1.25rem 2rem 2rem;
             position: relative;
             z-index: 10;
-            order: 3;
+            order: 4;
           }
           .hero-relative-content {
             display: none;
           }
+          .hero-title-description {
+            display: none;
+          }
           .hero-trust-bar {
-            order: 4;
+            order: 5;
           }
         }
         @media (min-width: 769px) {
@@ -59,6 +67,12 @@ export default function Hero() {
             display: none;
           }
           .hero-title-description {
+            display: none;
+          }
+          .hero-mobile-title {
+            display: none;
+          }
+          .hero-mobile-subtitle {
             display: none;
           }
           .hero-features {
@@ -116,16 +130,12 @@ export default function Hero() {
           </div>
         </div>
 
-        {/* Mobile Title and Description */}
-        <div className="hero-title-description">
-          <h1 className="text-3xl sm:text-4xl font-bold text-text-main leading-tight mb-4">
+        {/* Mobile: título */}
+        <div className="hero-mobile-title">
+          <h1 className="text-3xl sm:text-4xl font-bold text-text-main leading-tight">
             <span className="block text-4xl sm:text-5xl">Savvy</span>
             Analítica comercial para <span className="text-secondary">restaurantes, cafeterías y heladerías.</span>
           </h1>
-
-          <p className="text-base sm:text-lg text-text-muted font-medium">
-            <span className="block">Deja de decidir solo con intuición.</span><span className="block">Gestiona cada local con datos reales y mejora tu rentabilidad.</span>
-          </p>
         </div>
 
         {/* Mobile image */}
@@ -134,6 +144,14 @@ export default function Hero() {
           alt="SAVVY Dashboard"
           className="hero-image-mobile"
         />
+
+        {/* Mobile: subtítulo */}
+        <div className="hero-mobile-subtitle">
+          <p className="text-base sm:text-lg text-text-muted font-medium">
+            <span className="block">Deja de decidir solo con intuición.</span>
+            <span className="block">Gestiona cada local con datos reales y mejora tu rentabilidad.</span>
+          </p>
+        </div>
 
         {/* Mobile Features */}
         <div className="hero-features">
