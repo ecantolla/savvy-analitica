@@ -47,16 +47,16 @@ export default function Dashboard() {
           </p>
         </div>
 
-        {/* Desktop: columna izquierda (tabs) + columna derecha (imagen) */}
-        <div className="hidden lg:grid grid-cols-[175px_1fr] gap-6 items-start">
+        {/* Desktop: botones horizontales → texto → imagen */}
+        <div className="hidden lg:block">
 
-          {/* Tabs verticales — sticky mientras scrolleas la imagen */}
-          <div className="flex flex-col gap-1 sticky top-24">
+          {/* Botones en fila horizontal */}
+          <div className="flex flex-wrap gap-2 justify-center mb-8">
             {tabs.map((tab) => (
               <button
                 key={tab.id}
                 onClick={() => setActiveTab(tab.id)}
-                className={`text-left px-4 py-2.5 rounded-full text-[15px] font-semibold transition-all duration-200 ${
+                className={`px-4 py-2 rounded-full text-sm font-semibold transition-all duration-200 whitespace-nowrap ${
                   activeTab === tab.id
                     ? "bg-primary text-white shadow-lg shadow-primary/25"
                     : "text-white/60 border border-white/35 hover:text-white hover:bg-white/10"
@@ -67,30 +67,30 @@ export default function Dashboard() {
             ))}
           </div>
 
-          {/* Descripción arriba + imagen abajo */}
-          <div>
-            <div key={`text-${activeTab}`} className="mb-4 tab-text-enter">
-              <h3 className="text-lg font-semibold text-white mb-1.5">
-                {tabs[activeTab].label}
-              </h3>
-              <p className="text-white/70 leading-relaxed text-[15px]">
-                {tabs[activeTab].desc}
-              </p>
-            </div>
-            <div
-              key={`img-${activeTab}`}
-              className="rounded-xl overflow-hidden tab-image-enter"
-              style={boxShadow}
-            >
-              <Image
-                src={`/img/${tabs[activeTab].image}`}
-                alt={tabs[activeTab].label}
-                width={1600}
-                height={900}
-                className="w-full h-auto object-contain"
-                quality={93}
-              />
-            </div>
+          {/* Texto descriptivo */}
+          <div key={`text-${activeTab}`} className="text-center max-w-2xl mx-auto mb-6 tab-text-enter">
+            <h3 className="text-lg font-semibold text-white mb-1.5">
+              {tabs[activeTab].label}
+            </h3>
+            <p className="text-white/70 leading-relaxed text-[15px]">
+              {tabs[activeTab].desc}
+            </p>
+          </div>
+
+          {/* Imagen */}
+          <div
+            key={`img-${activeTab}`}
+            className="rounded-xl overflow-hidden tab-image-enter"
+            style={boxShadow}
+          >
+            <Image
+              src={`/img/${tabs[activeTab].image}`}
+              alt={tabs[activeTab].label}
+              width={1600}
+              height={900}
+              className="w-full h-auto object-contain"
+              quality={93}
+            />
           </div>
         </div>
 
