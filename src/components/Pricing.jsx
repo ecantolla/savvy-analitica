@@ -35,14 +35,15 @@ export default function Pricing() {
   ];
 
   const features = [
-    { label: "Panel de KPIs en tiempo real",        desc: "Venta total, ticket promedio, mesas y garzones por local" },
+    { label: "Ventas + Indicadores",                desc: "Venta total, ticket promedio, mesas y garzones por local" },
     { label: "Ventas comparadas",                   desc: "Día a día vs. mes anterior y mismo mes del año pasado" },
     { label: "Análisis de productos",               desc: "Unidades vendidas por Categoría, Sub Categoría y Producto" },
     { label: "Medios de pago",                      desc: "Efectivo, débito, crédito, delivery y propinas desglosadas" },
+    { label: "Gestión de Garzones",                 desc: "Rendimiento individual de cada garzón, ventas, mesas atendidas y ticket promedio" },
     { label: "Indicadores mensuales",               desc: "Venta por turno y día de la semana para armar dotaciones" },
     { label: "KPIs operacionales",                  desc: "Correlaciones entre mesas, garzones, ticket y venta" },
-    { label: "Análisis de categorías",              desc: "Qué categorías rinden en cada local y en qué período" },
-    { label: "Comparación entre locales",           desc: "Ranking de sucursales por venta, ticket y rentabilidad" },
+    { label: "Análisis de categorías",              desc: "Cómo rinden las diferentes categorías en cada local y en qué período" },
+    { label: "Comparación entre locales",           desc: "Cómo rinden las categorías y productos, local vs local por día y mes" },
     { label: "Implementación y capacitación",       desc: "Operativo en pocas semanas, tu equipo capacitado" },
   ];
 
