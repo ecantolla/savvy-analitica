@@ -1,7 +1,7 @@
 "use client";
 
 import Image from "next/image";
-import { Eye, FileX, Radar, Users } from "lucide-react";
+import { Eye, FileBarChart, Radar, Users } from "lucide-react";
 
 const outcomes = [
   {
@@ -12,7 +12,7 @@ const outcomes = [
   {
     title: "Toda la información en un solo reporte, generado automáticamente",
     desc: "Cero planillas, cero trabajo manual.",
-    icon: FileX,
+    icon: FileBarChart,
   },
   {
     title: "Resuelve problemas del día y proyecta resultados mensuales",
