@@ -1,28 +1,28 @@
 "use client";
 
 import Image from "next/image";
-import { Eye, TrendingUp, FileX, Radar } from "lucide-react";
+import { Eye, FileX, Radar, Users } from "lucide-react";
 
 const outcomes = [
   {
-    title: "Control total, en tiempo real",
-    desc: "Ve qué pasa en cada local (ventas, márgenes, rendimiento) sin moverte de tu oficina.",
+    title: "Conocimiento en tiempo real de los principales indicadores de gestión de cada una de tus tiendas",
+    desc: "",
     icon: Eye,
   },
   {
-    title: "Más margen, menos adivinanza",
-    desc: "Sabrás exactamente qué productos y locales te dejan plata, y dejarás de gastar recursos donde no rinde.",
-    icon: TrendingUp,
-  },
-  {
-    title: "Cero planillas, cero trabajo manual",
-    desc: "Tus reportes se generan solos. Sin reconciliar Excel, sin pedirle datos a tu equipo.",
+    title: "Toda la información en un solo reporte, generado automáticamente",
+    desc: "Cero planillas, cero trabajo manual.",
     icon: FileX,
   },
   {
-    title: "Te adelantas a los problemas",
-    desc: "Detecta caídas, desvíos y oportunidades antes de que se vuelvan obvias o costosas.",
+    title: "Resuelve problemas del día y proyecta resultados mensuales",
+    desc: "Te adelantas a los problemas. Detecta caídas, desviaciones y oportunidades.",
     icon: Radar,
+  },
+  {
+    title: "Consigue la participación y aporte de administradores y garzones.",
+    desc: "",
+    icon: Users,
   },
 ];
 
@@ -33,10 +33,12 @@ export default function WhatIsSavvy() {
         {/* Header a todo el ancho */}
         <div className="md:text-center max-w-4xl mx-auto mb-16">
           <h2 className="text-3xl md:text-[2.75rem] font-bold text-text-main mt-3 mb-5 leading-[1.1] tracking-tight text-center">
-            <span style={{ display: "block" }}>Controla tu operación.</span>
-            <span style={{ display: "block" }}>Protege tu margen.</span>
-            <span style={{ display: "block" }}>Crece con inteligencia.</span>
+            <span style={{ display: "block" }}>Mide y conoce tu cadena,</span>
+            <span style={{ display: "block" }}>tienda por tienda.</span>
           </h2>
+          <p className="text-xl md:text-2xl font-semibold text-primary mb-3 text-center">
+            Todo lo que se mide, se mejora.
+          </p>
           <p className="text-xl text-text-muted leading-relaxed max-w-2xl mx-auto text-center">
             Savvy se conecta a tu POS y transforma cada transacción en información
             clara para gestionar tu cadena con cabeza fría.
@@ -71,9 +73,11 @@ export default function WhatIsSavvy() {
                     <h3 className="text-xl font-semibold text-text-main mb-1.5">
                       {item.title}
                     </h3>
-                    <p className="text-text-muted leading-relaxed">
-                      {item.desc}
-                    </p>
+                    {item.desc && (
+                      <p className="text-text-muted leading-relaxed">
+                        {item.desc}
+                      </p>
+                    )}
                   </div>
                 </div>
               );
