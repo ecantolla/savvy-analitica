@@ -198,4 +198,10 @@ export default function UseCases() {
                   </p>
                 </div>
               )}
-            </div
+            </div>
+          ))}
+        </div>
+      </div>
+    </section>
+  );
+}
