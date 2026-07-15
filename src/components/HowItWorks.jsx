@@ -8,7 +8,7 @@ function PosCallout() {
     <div className="inline-flex items-start gap-3 bg-primary/5 ring-1 ring-primary/15 rounded-xl px-4 py-3 text-left">
       <Plug className="text-primary flex-shrink-0 mt-0.5" size={20} />
       <p className="text-[15px] font-semibold text-text-main leading-snug">
-        No necesitas cambiar tu POS. Savvy <span className="text-primary">potencia el sistema que ya usas.</span>
+        Sin interrupciones en tu operación. El proceso es simple, guiado y tú solo tienes que aprobar.
       </p>
     </div>
   );
@@ -47,10 +47,10 @@ export default function HowItWorks() {
         {/* Desktop: encabezado centrado */}
         <div className="hidden lg:block text-center mb-16">
           <h2 className="text-3xl md:text-[2.75rem] font-bold text-text-main mt-3 mb-5 leading-[1.1] tracking-tight whitespace-nowrap">
-            Decisiones basadas en datos, sin esfuerzo
+            Así de fácil es con Savvy
           </h2>
           <p className="text-xl text-text-muted leading-relaxed max-w-2xl mx-auto">
-            Sin interrupciones en tu operación. El proceso es simple, guiado y tú solo tienes que aprobar.
+            Sin migraciones. Sin cambiar de sistema. Potencia tu POS actual
           </p>
           <div className="mt-8 flex justify-center">
             <PosCallout />
@@ -62,7 +62,7 @@ export default function HowItWorks() {
 
           {/* Mobile: título */}
           <h2 className="lg:hidden order-1 text-3xl font-bold text-text-main leading-[1.1] tracking-tight text-center">
-            Decisiones basadas en datos, sin esfuerzo
+            Así de fácil es con Savvy
           </h2>
 
           {/* Imagen */}
@@ -81,7 +81,7 @@ export default function HowItWorks() {
 
           {/* Mobile: subtítulo */}
           <p className="lg:hidden order-3 mt-6 text-xl text-text-muted leading-relaxed">
-            Sin interrupciones en tu operación. El proceso es simple, guiado y tú solo tienes que aprobar.
+            Sin migraciones. Sin cambiar de sistema. Potencia tu POS actual
           </p>
 
           {/* Mobile: callout POS */}
