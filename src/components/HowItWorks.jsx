@@ -8,7 +8,7 @@ function PosCallout() {
     <div className="inline-flex items-start gap-3 bg-primary/5 ring-1 ring-primary/15 rounded-xl px-4 py-3 text-left">
       <Plug className="text-primary flex-shrink-0 mt-0.5" size={20} />
       <p className="text-[15px] font-semibold text-text-main leading-snug">
-        Sin interrupciones en tu operación. El proceso es simple, guiado y tú solo tienes que aprobar.
+        Sin migraciones. Sin cambiar de sistema. Potencia tu POS actual
       </p>
     </div>
   );
@@ -50,7 +50,7 @@ export default function HowItWorks() {
             Así de fácil es con Savvy
           </h2>
           <p className="text-xl text-text-muted leading-relaxed max-w-2xl mx-auto">
-            Sin migraciones. Sin cambiar de sistema. Potencia tu POS actual
+            Sin interrupciones en tu operación. El proceso es simple, guiado y tú solo tienes que aprobar.
           </p>
           <div className="mt-8 flex justify-center">
             <PosCallout />
@@ -81,7 +81,7 @@ export default function HowItWorks() {
 
           {/* Mobile: subtítulo */}
           <p className="lg:hidden order-3 mt-6 text-xl text-text-muted leading-relaxed">
-            Sin migraciones. Sin cambiar de sistema. Potencia tu POS actual
+            Sin interrupciones en tu operación. El proceso es simple, guiado y tú solo tienes que aprobar.
           </p>
 
           {/* Mobile: callout POS */}
