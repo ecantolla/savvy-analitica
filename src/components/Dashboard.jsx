@@ -24,7 +24,7 @@ export default function Dashboard() {
     { id: 5, label: "Garzones",                image: "vista6-garzones.webp",            desc: "Mide el rendimiento individual de cada garzón: ventas, mesas atendidas y ticket promedio. Fija objetivos claros y crea incentivos justos basados en datos." },
     { id: 6, label: "Indicadores Mensuales",   image: "vista7-indicadores-mensuales.webp", desc: "Analiza la venta por turno y por día de la semana. Arma tus equipos de cocina y salón con la dotación exacta que cada momento necesita, sin sobre ni subcontratar." },
     { id: 7, label: "Análisis de Categorías",  image: "vista8-categorias.webp",          desc: "Mide unidades vendidas por Categoría, Sub Categoría y Producto en cada local. Comprueba si tu carta responde al posicionamiento de tu marca." },
-    { id: 8, label: "Comparación de Locales",  image: "vista9-comparacion-locales.webp", desc: "Qué categorías venden más en cada sucursal y mes. Identifica si tu fuerte es el Bebestible en el Local 1 o la Pasta en el Local 2, y toma decisiones de carta, stock y promociones." },
+    { id: 8, label: "Análisis Tiendas",        image: "vista9-comparacion-locales.webp", desc: "Qué categorías venden más en cada sucursal y mes. Identifica si tu fuerte es el Bebestible en el Local 1 o la Pasta en el Local 2, y toma decisiones de carta, stock y promociones." },
   ];
 
   const boxShadow = { boxShadow: "0 10px 80px 8px rgba(180,200,255,0.30), 0 40px 90px -20px rgba(0,0,0,0.55)" };
