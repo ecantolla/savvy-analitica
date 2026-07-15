@@ -14,7 +14,7 @@ import {
 } from "lucide-react";
 
 const allCases = [
-  { num: "01", title: "Para controlar tu negocio", desc: "Ve en tiempo real qué está pasando en cada sucursal, las ventas, márgenes, rendimiento, sin necesitar estar físicamente presente.", icon: Eye },
+  { num: "01", title: "Para controlar tu negocio", desc: "Ve la información completa de tus locales: ventas, cantidad de mesas y de personas que atendieron tus garzones por turno y por día. Podrás tomar mejores decisiones en base a esta información.", icon: Eye },
   { num: "02", title: "Para maximizar tu rentabilidad", desc: "Identifica qué productos, canales y categorías contribuyen realmente a tus resultados y enfoca tus recursos donde tiene sentido.", icon: BarChart3 },
   { num: "03", title: "Para mantener inventarios óptimos", desc: "Conoce la venta en unidades por día y mes. Sabrás cuándo comprar, cuánto abastecer y cómo definir tu algoritmo de abastecimiento con datos reales.", icon: DollarSign },
   { num: "04", title: "Para enfocar tu gestión", desc: "Prioriza las acciones que más impacto generan. Deja de operar en base a urgencias y empieza a gestionar con claridad estratégica.", icon: Target },
@@ -22,7 +22,7 @@ const allCases = [
   { num: "06", title: "Para medir tu desempeño", desc: "Fija objetivos con base en lo que tu negocio realmente puede lograr y mide el avance semana a semana, local por local.", icon: TrendingUp },
   { num: "07", title: "Para confirmar o rebatir tus percepciones", desc: "¿Crees que el delivery no te conviene? ¿Que un local rinde menos que otro? Savvy te dice si estás en lo correcto, con números, no con opiniones.", icon: CheckCircle },
   { num: "08", title: "Para saber si ganas o no (y cuánto)", desc: "Identifica exactamente qué locales, productos y canales generan rentabilidad real y cuáles están erosionando tu margen sin que lo notes.", icon: DollarSign },
-  { num: "09", title: "Para nunca perderte una oportunidad", desc: "Detecta tendencias, patrones y correlaciones en tus datos antes de que se vuelvan obvias. La ventaja competitiva está en ver antes que los demás.", icon: Sparkles },
+  { num: "09", title: "Para nunca perderte una oportunidad", desc: "Detecta tendencias, patrones de comportamiento y correlaciones entre tus principales indicadores. No te quedes con la percepción de que todo se vuelva obvio.", icon: Sparkles },
 ];
 
 /**
@@ -198,10 +198,4 @@ export default function UseCases() {
                   </p>
                 </div>
               )}
-            </div>
-          ))}
-        </div>
-      </div>
-    </section>
-  );
-}
+            </div
