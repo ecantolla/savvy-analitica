@@ -98,21 +98,25 @@ export default function Hero() {
             </h1>
 
             <p className="text-lg sm:text-xl text-text-muted mb-10 font-medium">
-              <span className="block">Deja de decidir solo con intuición.</span><span className="block">Gestiona cada local con datos reales y mejora tu rentabilidad.</span>
+              Deja de tomar decisiones por intuición y decide con información real.
             </p>
 
             <div className="space-y-4 mb-10">
               <div className="flex items-center gap-3">
                 <CheckCircle2 className="text-primary flex-shrink-0" size={24} />
-                <span className="text-text-main font-medium">Entiende el rendimiento de cada local</span>
+                <span className="text-text-main font-medium">Diseñado para Restaurantes, Cafeterías y Heladerías</span>
               </div>
               <div className="flex items-center gap-3">
                 <CheckCircle2 className="text-primary flex-shrink-0" size={24} />
-                <span className="text-text-main font-medium">Analiza categorías y productos</span>
+                <span className="text-text-main font-medium">Mide la gestión por local en forma diaria y mensual</span>
               </div>
               <div className="flex items-center gap-3">
                 <CheckCircle2 className="text-primary flex-shrink-0" size={24} />
-                <span className="text-text-main font-medium">Diseñado para gastronomía</span>
+                <span className="text-text-main font-medium">Permite analizar los principales indicadores de gestión</span>
+              </div>
+              <div className="flex items-center gap-3">
+                <CheckCircle2 className="text-primary flex-shrink-0" size={24} />
+                <span className="text-text-main font-medium">Consolida la información de todas las tiendas</span>
               </div>
             </div>
 
@@ -148,8 +152,7 @@ export default function Hero() {
         {/* Mobile: subtítulo */}
         <div className="hero-mobile-subtitle">
           <p className="text-base sm:text-lg text-text-muted font-medium">
-            <span className="block">Deja de decidir solo con intuición.</span>
-            <span className="block">Gestiona cada local con datos reales y mejora tu rentabilidad.</span>
+            Deja de tomar decisiones por intuición y decide con información real.
           </p>
         </div>
 
@@ -158,15 +161,19 @@ export default function Hero() {
           <div className="space-y-4 mb-10">
             <div className="flex items-center gap-3">
               <CheckCircle2 className="text-primary flex-shrink-0" size={24} />
-              <span className="text-text-main font-medium">Entiende el rendimiento de cada local</span>
+              <span className="text-text-main font-medium">Diseñado para Restaurantes, Cafeterías y Heladerías</span>
             </div>
             <div className="flex items-center gap-3">
               <CheckCircle2 className="text-primary flex-shrink-0" size={24} />
-              <span className="text-text-main font-medium">Analiza categorías y productos</span>
+              <span className="text-text-main font-medium">Mide la gestión por local en forma diaria y mensual</span>
             </div>
             <div className="flex items-center gap-3">
               <CheckCircle2 className="text-primary flex-shrink-0" size={24} />
-              <span className="text-text-main font-medium">Diseñado para gastronomía</span>
+              <span className="text-text-main font-medium">Permite analizar los principales indicadores de gestión</span>
+            </div>
+            <div className="flex items-center gap-3">
+              <CheckCircle2 className="text-primary flex-shrink-0" size={24} />
+              <span className="text-text-main font-medium">Consolida la información de todas las tiendas</span>
             </div>
           </div>
 
