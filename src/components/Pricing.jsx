@@ -9,27 +9,27 @@ export default function Pricing() {
 
   const plans = [
     {
-      name: "Starter",
+      name: "Plan 1",
       range: "1 a 3 locales",
       price: "5 UF",
       popular: false,
     },
     {
-      name: "Growth",
+      name: "Plan 2",
       range: "4 a 10 locales",
       price: "10 UF",
       popular: true,
     },
     {
-      name: "Pro",
+      name: "Plan 3",
       range: "11 a 20 locales",
       price: "15 UF",
       popular: false,
     },
     {
-      name: "Enterprise",
+      name: "Plan 4",
       range: "21 o más locales",
-      price: "25 UF",
+      price: "Conversemos",
       popular: false,
     }
   ];
@@ -66,13 +66,19 @@ export default function Pricing() {
                 className="relative bg-white rounded-2xl p-8 ring-2 ring-primary/40 shadow-sm hover:-translate-y-1 hover:shadow-md transition-all duration-300 flex flex-col"
               >
                 <h3 className="text-2xl font-bold text-text-main mb-1">{plan.name}</h3>
-                <p className="text-sm text-text-muted font-medium mb-6 pb-6 border-b border-gray-100">
+                <p className="text-base text-text-muted font-semibold mb-6 pb-6 border-b border-gray-100">
                   {plan.range}
                 </p>
 
                 <div className="mb-6 text-center md:text-left">
-                  <span className="text-4xl font-black text-text-main">{plan.price}</span>
-                  <span className="text-text-muted font-medium"> /mes</span>
+                  {plan.price === "Conversemos" ? (
+                    <span className="text-4xl font-black text-text-main">Conversemos</span>
+                  ) : (
+                    <>
+                      <span className="text-4xl font-black text-text-main">{plan.price}</span>
+                      <span className="text-text-muted font-medium"> /mes</span>
+                    </>
+                  )}
                 </div>
 
                 <div className="space-y-3 mb-8 flex-grow">
