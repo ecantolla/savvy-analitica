@@ -160,7 +160,7 @@ export default function UseCases() {
                 <h3 className="text-3xl font-bold text-text-main mb-6 min-h-[80px]">
                   {current.title}
                 </h3>
-                <p className="text-lg text-text-muted leading-relaxed">
+                <p className="text-xl text-text-muted leading-relaxed">
                   {current.desc}
                 </p>
               </div>
