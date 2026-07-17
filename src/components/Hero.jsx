@@ -97,22 +97,22 @@ export default function Hero() {
               Analítica comercial para <span className="text-secondary">restaurantes, cafeterías y heladerías.</span>
             </h1>
 
-            <p className="text-lg sm:text-xl text-text-muted mb-3 font-medium">
+            <p className="text-lg sm:text-xl text-text-main mb-3 font-semibold">
               Deja de tomar decisiones por intuición y decide con información real.
             </p>
 
-            <p className="text-lg sm:text-xl text-text-muted mb-10 font-medium">
+            <p className="text-lg sm:text-xl text-text-main mb-10 font-semibold">
               Tu POS tiene los números. Savvy te da el control.
             </p>
 
             <div className="space-y-4 mb-10">
               <div className="flex items-center gap-3">
                 <CheckCircle2 className="text-primary flex-shrink-0" size={26} />
-                <span className="text-text-main font-medium text-lg">Mide la gestión por local en forma diaria y mensual</span>
+                <span className="text-text-muted font-normal text-lg">Mide la gestión por local en forma diaria y mensual</span>
               </div>
               <div className="flex items-center gap-3">
                 <CheckCircle2 className="text-primary flex-shrink-0" size={26} />
-                <span className="text-text-main font-medium text-lg">Consolida la información de todas las tiendas</span>
+                <span className="text-text-muted font-normal text-lg">Consolida la información de todas las tiendas</span>
               </div>
             </div>
 
@@ -147,10 +147,10 @@ export default function Hero() {
 
         {/* Mobile: subtítulo */}
         <div className="hero-mobile-subtitle">
-          <p className="text-base sm:text-lg text-text-muted font-medium">
+          <p className="text-base sm:text-lg text-text-main font-semibold">
             Deja de tomar decisiones por intuición y decide con información real.
           </p>
-          <p className="text-base sm:text-lg text-text-muted font-medium">
+          <p className="text-base sm:text-lg text-text-main font-semibold">
             Tu POS tiene los números. Savvy te da el control.
           </p>
         </div>
@@ -160,11 +160,11 @@ export default function Hero() {
           <div className="space-y-3 mb-10">
             <div className="flex items-center gap-2">
               <CheckCircle2 className="text-primary flex-shrink-0" size={18} />
-              <span className="text-text-main font-medium text-sm">Mide la gestión por local en forma diaria y mensual</span>
+              <span className="text-text-muted font-normal text-sm">Mide la gestión por local en forma diaria y mensual</span>
             </div>
             <div className="flex items-center gap-2">
               <CheckCircle2 className="text-primary flex-shrink-0" size={18} />
-              <span className="text-text-main font-medium text-sm">Consolida la información de todas las tiendas</span>
+              <span className="text-text-muted font-normal text-sm">Consolida la información de todas las tiendas</span>
             </div>
           </div>
 
