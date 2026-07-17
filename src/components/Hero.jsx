@@ -101,7 +101,7 @@ export default function Hero() {
               Deja de tomar decisiones por intuición y decide con información real.
             </p>
 
-            <p className="text-lg sm:text-xl text-text-main font-semibold mb-10">
+            <p className="text-lg sm:text-xl text-text-muted mb-10 font-medium">
               Tu POS tiene los números. Savvy te da el control.
             </p>
 
@@ -158,7 +158,7 @@ export default function Hero() {
           <p className="text-base sm:text-lg text-text-muted font-medium">
             Deja de tomar decisiones por intuición y decide con información real.
           </p>
-          <p className="text-base sm:text-lg text-text-main font-semibold mt-2">
+          <p className="text-base sm:text-lg text-text-muted font-medium">
             Tu POS tiene los números. Savvy te da el control.
           </p>
         </div>
