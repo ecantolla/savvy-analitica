@@ -37,7 +37,7 @@ export default function Footer() {
               <ul className="space-y-4">
                 <li><Link href="#que-es" className="text-sm font-medium transition-colors hover:text-white" style={{ color: "rgba(255,255,255,0.7)" }}>¿Qué es Savvy?</Link></li>
                 <li><Link href="#para-que-sirve" className="text-sm font-medium transition-colors hover:text-white" style={{ color: "rgba(255,255,255,0.7)" }}>Para qué sirve</Link></li>
-                <li><Link href="#dashboard" className="text-sm font-medium transition-colors hover:text-white" style={{ color: "rgba(255,255,255,0.7)" }}>Dashboard</Link></li>
+                <li><Link href="#dashboard" className="text-sm font-medium transition-colors hover:text-white" style={{ color: "rgba(255,255,255,0.7)" }}>Reportes</Link></li>
                 <li><Link href="#precios" className="text-sm font-medium transition-colors hover:text-white" style={{ color: "rgba(255,255,255,0.7)" }}>Precios</Link></li>
                 <li><Link href="#faq" className="text-sm font-medium transition-colors hover:text-white" style={{ color: "rgba(255,255,255,0.7)" }}>Preguntas Frecuentes</Link></li>
               </ul>
