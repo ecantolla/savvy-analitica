@@ -65,16 +65,16 @@ export default function WhatIsSavvy() {
             {outcomes.map((item, i) => {
               const Icon = item.icon;
               return (
-                <div key={i} className="flex gap-5 group">
-                  <div className="flex-shrink-0 w-12 h-12 rounded-xl bg-primary/10 text-primary flex items-center justify-center transition-colors group-hover:bg-primary group-hover:text-white">
-                    <Icon size={24} />
+                <div key={i} className="flex gap-4 md:gap-5 group">
+                  <div className="flex-shrink-0 w-10 h-10 md:w-12 md:h-12 rounded-xl bg-primary/10 text-primary flex items-center justify-center transition-colors group-hover:bg-primary group-hover:text-white">
+                    <Icon className="w-5 h-5 md:w-6 md:h-6" />
                   </div>
                   <div>
-                    <h3 className="text-xl font-semibold text-text-main mb-1.5">
+                    <h3 className="text-base md:text-xl font-semibold text-text-main mb-1.5">
                       {item.title}
                     </h3>
                     {item.desc && (
-                      <p className="text-text-muted leading-relaxed">
+                      <p className="text-sm md:text-base text-text-muted leading-relaxed">
                         {item.desc}
                       </p>
                     )}
