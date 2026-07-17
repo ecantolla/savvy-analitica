@@ -158,22 +158,22 @@ export default function Hero() {
 
         {/* Mobile Features */}
         <div className="hero-features">
-          <div className="space-y-4 mb-10">
-            <div className="flex items-center gap-3">
-              <CheckCircle2 className="text-primary flex-shrink-0" size={24} />
-              <span className="text-text-main font-medium">Diseñado para Restaurantes, Cafeterías y Heladerías</span>
+          <div className="space-y-3 mb-10">
+            <div className="flex items-center gap-2">
+              <CheckCircle2 className="text-primary flex-shrink-0" size={18} />
+              <span className="text-text-main font-medium text-sm">Diseñado para Restaurantes, Cafeterías y Heladerías</span>
             </div>
-            <div className="flex items-center gap-3">
-              <CheckCircle2 className="text-primary flex-shrink-0" size={24} />
-              <span className="text-text-main font-medium">Mide la gestión por local en forma diaria y mensual</span>
+            <div className="flex items-center gap-2">
+              <CheckCircle2 className="text-primary flex-shrink-0" size={18} />
+              <span className="text-text-main font-medium text-sm">Mide la gestión por local en forma diaria y mensual</span>
             </div>
-            <div className="flex items-center gap-3">
-              <CheckCircle2 className="text-primary flex-shrink-0" size={24} />
-              <span className="text-text-main font-medium">Permite analizar los principales indicadores de gestión</span>
+            <div className="flex items-center gap-2">
+              <CheckCircle2 className="text-primary flex-shrink-0" size={18} />
+              <span className="text-text-main font-medium text-sm">Permite analizar los principales indicadores de gestión</span>
             </div>
-            <div className="flex items-center gap-3">
-              <CheckCircle2 className="text-primary flex-shrink-0" size={24} />
-              <span className="text-text-main font-medium">Consolida la información de todas las tiendas</span>
+            <div className="flex items-center gap-2">
+              <CheckCircle2 className="text-primary flex-shrink-0" size={18} />
+              <span className="text-text-main font-medium text-sm">Consolida la información de todas las tiendas</span>
             </div>
           </div>
 
