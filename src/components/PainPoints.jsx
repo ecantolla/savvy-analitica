@@ -9,11 +9,11 @@ import {
 export default function PainPoints() {
   const painPoints = [
     { icon: Store,           title: "No sé qué pasa en cada local ahora mismo",       description: "No tengo la información consolidada de todos los locales. Cuando algo sale mal, te enteras tarde, o por un WhatsApp del encargado." },
-    { icon: BrainCircuit,    title: "Tomo decisiones con el estómago, no con datos",   description: "No tengo los detalles de la venta y cobro por medio de pago, que me permita ver las comisiones que pago al banco en forma diaria y mensual." },
-    { icon: FileSpreadsheet, title: "Cada semana alguien arma una planilla distinta",  description: "Me cuesta hacer un buen cierre de caja y de medios de pago. El administrador tiene su versión, el gerente la suya. Nunca cuadran. Pierdes horas reconciliando datos en vez de analizarlos." },
-    { icon: TrendingDown,    title: "No sé qué productos me dejan plata de verdad",    description: "Vendes mucho de un plato pero no sabes si te conviene. No tienes claro qué categorías sostienen el negocio." },
+    { icon: BrainCircuit,    title: "Tomo decisiones con el estómago, no con datos",   description: "No tengo los detalles de la venta y cobro por medio de pago, que me permita ver las comisiones que pago en forma diaria y mensual." },
+    { icon: FileSpreadsheet, title: "Cada semana alguien arma una planilla distinta",  description: "El administrador tiene su versión, el gerente la suya. Nunca cuadran. Pierdes horas reconciliando datos en vez de analizarlos." },
+    { icon: TrendingDown,    title: "No sé qué productos aportan más al negocio",    description: "Vendes mucho de un plato pero no sabes si te conviene. No tienes claro qué categorías sostienen el negocio." },
     { icon: UsersRound,      title: "Controlo los equipos por intuición, no por datos", description: "No tengo un análisis del desempeño de cada uno de ellos. No tengo certeza si mi equipo de garzones está cumpliendo con las instrucciones." },
-    { icon: PackageMinus,    title: "Me quedo sin stock o compro de más",               description: "Sin visibilidad de cuánto vendiste por día y producto, el abastecimiento es al ojo. Y el costo lo pagas en merma o quiebre de stock." },
+    { icon: PackageMinus,    title: "Me quedo sin stock o compro de más",               description: "Sin visibilidad de cuánto vendiste por día y producto, el abastecimiento es al ojo. Y el costo lo pagas en mermas, quiebres de stock o sobre stock." },
   ];
 
   return (

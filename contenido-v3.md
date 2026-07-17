@@ -57,21 +57,20 @@ Si gestionas una cadena de restaurantes, cafeterías o heladerías, probablement
 No tengo la información consolidada de todos los locales. Cuando algo sale mal, te enteras tarde, o por un WhatsApp del encargado.
 
 02. **Tomo decisiones con el estómago, no con datos**
-No tengo un detalles de la venta y cobro por medio de pago, que me permita ver las comisiones que pago al banco en forma diaria y mensual.
+No tengo un detalles de la venta y cobro por medio de pago, que me permita ver las comisiones que pago en forma diaria y mensual.
 
 
 03. **Cada semana alguien arma una planilla distinta**
-Me cuesta hacer un buen cierre de caja y de medios de pago.
 El administrador tiene su versión, el gerente la suya. Nunca cuadran. Pierdes horas reconciliando datos en vez de analizarlos.
 
-04. **No sé qué productos me dejan plata de verdad**
+04. **No sé qué productos aportan más al negocio**
 Vendes mucho de un plato pero no sabes si te conviene. No tienes claro qué categorías sostienen el negocio.
 
 05. **Controlo los equipos por intuición, no por datos**
 No tengo un análisis del desempeño de cada uno de ellos. No tengo certeza si mi equipo de garzones esta cumpliendo con las instrucciones. 
 
 06. **Me quedo sin stock o compro de más**
-Sin visibilidad de cuánto vendiste por día y producto, el abastecimiento es al ojo. Y el costo lo pagas en merma o quiebre de stock.
+Sin visibilidad de cuánto vendiste por día y producto, el abastecimiento es al ojo. Y el costo lo pagas en mermas, quiebres de stock o sobre stock.
 
 ---
 
@@ -85,7 +84,7 @@ Savvy se conecta a tu POS y transforma cada transacción en información clara p
 - **Conocimiento en tiempo real de los principales indicadores de gestión de cada una de tus tiendas**
 - **Toda la información en un solo reporte, generado automáticamente** — Cero planillas, cero trabajo manual.
 - **Resuelve problemas del día y proyecta resultados mensuales** — Te adelantas a los problemas. Detecta caídas, desviaciones y oportunidades.
-- **Consigue la participación y aporte de administradores y garzones.**
+- **Consigue la participación y aporte de administradores y garzones.** — Cada uno ve sus indicadores y aporta a tu gestión con datos, no con opiniones.
 
 
 ---

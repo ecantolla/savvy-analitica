@@ -21,7 +21,7 @@ const outcomes = [
   },
   {
     title: "Consigue la participación y aporte de administradores y garzones.",
-    desc: "",
+    desc: "Cada uno ve sus indicadores y aporta a tu gestión con datos, no con opiniones.",
     icon: Users,
   },
 ];
