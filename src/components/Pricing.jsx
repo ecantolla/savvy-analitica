@@ -64,7 +64,7 @@ export default function Pricing() {
             {plans.map((plan, index) => (
               <div
                 key={index}
-                className="relative bg-white rounded-2xl p-5 md:p-8 ring-2 ring-primary/40 shadow-sm hover:-translate-y-1 hover:shadow-md transition-all duration-300 flex flex-col"
+                className="relative bg-white rounded-2xl p-5 md:p-8 ring-2 ring-primary/40 shadow-sm hover:-translate-y-1 hover:shadow-md transition-all duration-300 flex flex-col w-full max-w-[280px] mx-auto md:max-w-none md:mx-0"
               >
                 <h3 className="text-lg md:text-2xl font-bold text-text-main mb-1">{plan.name}</h3>
                 <p className="text-sm md:text-xl text-text-muted font-semibold mb-4 pb-4 md:mb-6 md:pb-6 border-b border-gray-100">
