@@ -70,11 +70,11 @@ export default function WhatIsSavvy() {
                     <Icon className="w-5 h-5 md:w-6 md:h-6" />
                   </div>
                   <div>
-                    <h3 className="text-base md:text-2xl font-semibold text-text-main mb-1.5">
+                    <h3 className="text-base md:text-xl font-semibold text-text-main mb-1.5">
                       {item.title}
                     </h3>
                     {item.desc && (
-                      <p className="text-sm md:text-lg text-text-muted leading-relaxed">
+                      <p className="text-sm md:text-base text-text-muted leading-relaxed">
                         {item.desc}
                       </p>
                     )}
