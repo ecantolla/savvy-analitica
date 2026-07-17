@@ -73,12 +73,12 @@ export default function UseCases() {
             ¿Para qué sirve Savvy?
           </h2>
           {/* Círculo (mobile, entre título y subtítulo) */}
-          <div className="lg:hidden relative w-full max-w-[260px] mx-auto aspect-square mb-5">
+          <div className="lg:hidden relative w-full max-w-[300px] mx-auto aspect-square mb-5">
             <Image
               src="/img/Circulo_Savvy.webp"
               alt="Círculo con las nueve razones para usar Savvy"
               fill
-              sizes="260px"
+              sizes="300px"
               className="object-contain"
             />
           </div>
