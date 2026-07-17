@@ -103,20 +103,20 @@ export default function Hero() {
 
             <div className="space-y-4 mb-10">
               <div className="flex items-center gap-3">
-                <CheckCircle2 className="text-primary flex-shrink-0" size={24} />
-                <span className="text-text-main font-medium">Diseñado para Restaurantes, Cafeterías y Heladerías</span>
+                <CheckCircle2 className="text-primary flex-shrink-0" size={26} />
+                <span className="text-text-main font-medium text-lg">Diseñado para Restaurantes, Cafeterías y Heladerías</span>
               </div>
               <div className="flex items-center gap-3">
-                <CheckCircle2 className="text-primary flex-shrink-0" size={24} />
-                <span className="text-text-main font-medium">Mide la gestión por local en forma diaria y mensual</span>
+                <CheckCircle2 className="text-primary flex-shrink-0" size={26} />
+                <span className="text-text-main font-medium text-lg">Mide la gestión por local en forma diaria y mensual</span>
               </div>
               <div className="flex items-center gap-3">
-                <CheckCircle2 className="text-primary flex-shrink-0" size={24} />
-                <span className="text-text-main font-medium">Permite analizar los principales indicadores de gestión</span>
+                <CheckCircle2 className="text-primary flex-shrink-0" size={26} />
+                <span className="text-text-main font-medium text-lg">Permite analizar los principales indicadores de gestión</span>
               </div>
               <div className="flex items-center gap-3">
-                <CheckCircle2 className="text-primary flex-shrink-0" size={24} />
-                <span className="text-text-main font-medium">Consolida la información de todas las tiendas</span>
+                <CheckCircle2 className="text-primary flex-shrink-0" size={26} />
+                <span className="text-text-main font-medium text-lg">Consolida la información de todas las tiendas</span>
               </div>
             </div>
 
@@ -127,7 +127,7 @@ export default function Hero() {
               >
                 Agenda tu demo gratis →
               </button>
-              <p className="mt-4 text-sm text-text-muted font-medium">
+              <p className="mt-4 text-base text-text-muted font-medium">
                 Sin compromisos. Te mostramos cómo funciona y qué puede hacer por tu negocio.
               </p>
             </div>
