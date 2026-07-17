@@ -195,16 +195,16 @@ export default function Hero() {
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="flex flex-col md:flex-row justify-center items-center divide-y md:divide-y-0 md:divide-x divide-gray-300">
               <div className="flex items-center gap-2 md:gap-3 px-4 md:px-8 py-2 md:py-0 w-full md:w-auto justify-center">
+                <Zap className="text-primary w-4 h-4 md:w-5 md:h-5" />
+                <span className="font-semibold text-text-main text-xs md:text-sm uppercase tracking-wide">Potencia tu POS actual</span>
+              </div>
+              <div className="flex items-center gap-2 md:gap-3 px-4 md:px-8 py-2 md:py-0 w-full md:w-auto justify-center">
                 <CheckCircle2 className="text-primary w-4 h-4 md:w-5 md:h-5" />
                 <span className="font-semibold text-text-main text-xs md:text-sm uppercase tracking-wide">Sin migraciones</span>
               </div>
               <div className="flex items-center gap-2 md:gap-3 px-4 md:px-8 py-2 md:py-0 w-full md:w-auto justify-center">
                 <Plug className="text-primary w-4 h-4 md:w-5 md:h-5" />
                 <span className="font-semibold text-text-main text-xs md:text-sm uppercase tracking-wide">Sin cambiar de sistema</span>
-              </div>
-              <div className="flex items-center gap-2 md:gap-3 px-4 md:px-8 py-2 md:py-0 w-full md:w-auto justify-center">
-                <Zap className="text-primary w-4 h-4 md:w-5 md:h-5" />
-                <span className="font-semibold text-text-main text-xs md:text-sm uppercase tracking-wide">Potencia tu POS actual</span>
               </div>
             </div>
           </div>
