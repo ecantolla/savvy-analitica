@@ -60,42 +60,42 @@ export default function Pricing() {
             </p>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 max-w-6xl mx-auto mb-16">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 md:gap-6 max-w-6xl mx-auto mb-16">
             {plans.map((plan, index) => (
               <div
                 key={index}
-                className="relative bg-white rounded-2xl p-8 ring-2 ring-primary/40 shadow-sm hover:-translate-y-1 hover:shadow-md transition-all duration-300 flex flex-col"
+                className="relative bg-white rounded-2xl p-5 md:p-8 ring-2 ring-primary/40 shadow-sm hover:-translate-y-1 hover:shadow-md transition-all duration-300 flex flex-col"
               >
-                <h3 className="text-2xl font-bold text-text-main mb-1">{plan.name}</h3>
-                <p className="text-xl text-text-muted font-semibold mb-6 pb-6 border-b border-gray-100">
+                <h3 className="text-lg md:text-2xl font-bold text-text-main mb-1">{plan.name}</h3>
+                <p className="text-sm md:text-xl text-text-muted font-semibold mb-4 pb-4 md:mb-6 md:pb-6 border-b border-gray-100">
                   {plan.range}
                 </p>
 
-                <div className="mb-6 text-center md:text-left">
+                <div className="mb-4 md:mb-6 text-center md:text-left">
                   {plan.price === "Conversemos" ? (
-                    <span className="text-4xl font-black text-text-main">Conversemos</span>
+                    <span className="text-2xl md:text-4xl font-black text-text-main">Conversemos</span>
                   ) : (
                     <>
-                      <span className="text-4xl font-black text-text-main">{plan.price}</span>
-                      <span className="text-text-muted font-medium"> /mes</span>
+                      <span className="text-2xl md:text-4xl font-black text-text-main">{plan.price}</span>
+                      <span className="text-text-muted font-medium text-sm md:text-base"> /mes</span>
                     </>
                   )}
                 </div>
 
-                <div className="space-y-3 mb-8 flex-grow">
-                  <div className="flex items-start gap-3">
-                    <Check size={18} className="text-primary flex-shrink-0 mt-0.5" />
-                    <span className="text-sm text-text-muted">100% de la plataforma incluida</span>
+                <div className="space-y-2 md:space-y-3 mb-5 md:mb-8 flex-grow">
+                  <div className="flex items-start gap-2 md:gap-3">
+                    <Check size={16} className="text-primary flex-shrink-0 mt-0.5 md:w-[18px] md:h-[18px]" />
+                    <span className="text-xs md:text-sm text-text-muted">100% de la plataforma incluida</span>
                   </div>
-                  <div className="flex items-start gap-3">
-                    <Check size={18} className="text-primary flex-shrink-0 mt-0.5" />
-                    <span className="text-sm text-text-muted">Capacitación inicial</span>
+                  <div className="flex items-start gap-2 md:gap-3">
+                    <Check size={16} className="text-primary flex-shrink-0 mt-0.5 md:w-[18px] md:h-[18px]" />
+                    <span className="text-xs md:text-sm text-text-muted">Capacitación inicial</span>
                   </div>
                 </div>
 
                 <button
                   onClick={() => setIsModalOpen(true)}
-                  className="w-full py-3 rounded-xl font-bold transition-colors bg-primary hover:bg-primary/90 text-white"
+                  className="w-full py-2.5 md:py-3 text-sm md:text-base rounded-xl font-bold transition-colors bg-primary hover:bg-primary/90 text-white"
                 >
                   Agenda tu demo →
                 </button>
