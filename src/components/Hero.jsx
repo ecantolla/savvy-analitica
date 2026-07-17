@@ -97,8 +97,12 @@ export default function Hero() {
               Analítica comercial para <span className="text-secondary">restaurantes, cafeterías y heladerías.</span>
             </h1>
 
-            <p className="text-lg sm:text-xl text-text-muted mb-10 font-medium">
+            <p className="text-lg sm:text-xl text-text-muted mb-3 font-medium">
               Deja de tomar decisiones por intuición y decide con información real.
+            </p>
+
+            <p className="text-lg sm:text-xl text-text-main font-semibold mb-10">
+              Tu POS tiene los números. Savvy te da el control.
             </p>
 
             <div className="space-y-4 mb-10">
@@ -153,6 +157,9 @@ export default function Hero() {
         <div className="hero-mobile-subtitle">
           <p className="text-base sm:text-lg text-text-muted font-medium">
             Deja de tomar decisiones por intuición y decide con información real.
+          </p>
+          <p className="text-base sm:text-lg text-text-main font-semibold mt-2">
+            Tu POS tiene los números. Savvy te da el control.
           </p>
         </div>
 
