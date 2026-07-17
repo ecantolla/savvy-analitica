@@ -8,7 +8,7 @@ function PosCallout() {
     <div className="inline-flex items-start gap-3 bg-primary/5 ring-1 ring-primary/15 rounded-xl px-5 py-4 text-left">
       <Plug className="text-primary flex-shrink-0 mt-0.5" size={24} />
       <p className="text-lg font-semibold text-text-main leading-snug">
-        Sin migraciones. Sin cambiar de sistema. Potencia tu POS actual
+        Potencia tu POS actual. Sin migraciones. Sin cambiar de sistema
       </p>
     </div>
   );
