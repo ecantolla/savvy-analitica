@@ -1,0 +1,16 @@
+# Normaliza los fin de línea para evitar el "ruido" de CRLF/LF
+# (que OneDrive/Windows marquen archivos como modificados sin cambios reales)
+* text=auto eol=lf
+
+# Archivos binarios: git no debe tocarlos ni convertir saltos de línea
+*.png   binary
+*.jpg   binary
+*.jpeg  binary
+*.gif   binary
+*.webp  binary
+*.ico   binary
+*.pdf   binary
+*.woff  binary
+*.woff2 binary
+*.ttf   binary
+*.eot   binary
