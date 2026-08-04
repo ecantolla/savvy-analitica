@@ -98,7 +98,7 @@ export default function Pricing() {
           </div>
 
           <div className="max-w-5xl mx-auto bg-white rounded-2xl p-8 shadow-sm border border-gray-100 mb-12">
-            <h4 className="text-lg font-bold text-text-main mb-8 text-center">
+            <h4 className="text-xl font-bold text-text-main mb-8 text-center">
               Todos los planes incluyen el 100% de la plataforma
             </h4>
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
@@ -108,8 +108,8 @@ export default function Pricing() {
                     <Check size={13} className="text-primary" />
                   </div>
                   <div>
-                    <p className="text-sm font-semibold text-text-main">{feature.label}</p>
-                    <p className="text-[13px] text-text-muted mt-0.5 leading-relaxed">{feature.desc}</p>
+                    <p className="text-base font-semibold text-text-main">{feature.label}</p>
+                    <p className="text-sm text-text-muted mt-0.5 leading-relaxed">{feature.desc}</p>
                   </div>
                 </div>
               ))}
