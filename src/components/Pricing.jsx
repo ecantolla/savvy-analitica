@@ -98,7 +98,7 @@ export default function Pricing() {
           </div>
 
           <div className="max-w-5xl mx-auto bg-white rounded-2xl p-8 shadow-sm border border-gray-100 mb-12">
-            <h4 className="text-xl font-bold text-text-main mb-8 text-center">
+            <h4 className="text-lg md:text-xl font-bold text-text-main mb-8 text-center">
               Todos los planes incluyen el 100% de la plataforma
             </h4>
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
@@ -108,8 +108,8 @@ export default function Pricing() {
                     <Check size={13} className="text-primary" />
                   </div>
                   <div>
-                    <p className="text-base font-semibold text-text-main">{feature.label}</p>
-                    <p className="text-sm text-text-muted mt-0.5 leading-relaxed">{feature.desc}</p>
+                    <p className="text-sm md:text-base font-semibold text-text-main">{feature.label}</p>
+                    <p className="text-[13px] md:text-sm text-text-muted mt-0.5 leading-relaxed">{feature.desc}</p>
                   </div>
                 </div>
               ))}
@@ -117,10 +117,10 @@ export default function Pricing() {
           </div>
 
           <div className="text-center max-w-2xl mx-auto space-y-4">
-            <p className="text-base text-text-muted italic">
+            <p className="text-sm md:text-base text-text-muted italic">
               * Valores en UF, no incluyen IVA.
             </p>
-            <div className="bg-secondary/5 border border-secondary/15 text-text-main px-6 py-4 rounded-xl text-base">
+            <div className="bg-secondary/5 border border-secondary/15 text-text-main px-6 py-4 rounded-xl text-sm md:text-base">
               <span className="font-bold block mb-1 text-secondary">Nota sobre integración</span>
               <span className="text-text-muted">La integración con tu POS actual se evalúa y cotiza por separado, según las características de tu sistema. Te lo explicamos en la demo.</span>
             </div>
