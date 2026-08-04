@@ -9,29 +9,23 @@ export default function Pricing() {
 
   const plans = [
     {
-      name: "Plan 1",
+      name: "Tramo 1",
       range: "1 a 3 locales",
       price: "5 UF",
-      popular: false,
+      suffix: "/mes",
     },
     {
-      name: "Plan 2",
-      range: "4 a 10 locales",
-      price: "10 UF",
-      popular: true,
+      name: "Tramo 2",
+      range: "4 a 15 locales",
+      price: "1,5 UF",
+      suffix: "por local / mes",
     },
     {
-      name: "Plan 3",
-      range: "11 a 20 locales",
-      price: "15 UF",
-      popular: false,
-    },
-    {
-      name: "Plan 4",
-      range: "21 o más locales",
+      name: "Tramo 3",
+      range: "16 o más locales",
       price: "Conversemos",
-      popular: false,
-    }
+      suffix: "",
+    },
   ];
 
   const features = [
@@ -60,7 +54,7 @@ export default function Pricing() {
             </p>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 md:gap-6 max-w-6xl mx-auto mb-16">
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-4 md:gap-6 max-w-5xl mx-auto mb-16">
             {plans.map((plan, index) => (
               <div
                 key={index}
@@ -77,7 +71,7 @@ export default function Pricing() {
                   ) : (
                     <>
                       <span className="text-2xl md:text-4xl font-black text-text-main">{plan.price}</span>
-                      <span className="text-text-muted font-medium text-sm md:text-base"> /mes</span>
+                      <span className="text-text-muted font-medium text-sm md:text-base"> {plan.suffix}</span>
                     </>
                   )}
                 </div>
@@ -124,7 +118,7 @@ export default function Pricing() {
 
           <div className="text-center max-w-2xl mx-auto space-y-4">
             <p className="text-sm text-text-muted italic">
-              * Valor mensual más IVA.
+              * Valores en UF, no incluyen IVA.
             </p>
             <div className="bg-secondary/5 border border-secondary/15 text-text-main px-6 py-4 rounded-xl text-sm">
               <span className="font-bold block mb-1 text-secondary">Nota sobre integración</span>
