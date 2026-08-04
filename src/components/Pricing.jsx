@@ -117,10 +117,10 @@ export default function Pricing() {
           </div>
 
           <div className="text-center max-w-2xl mx-auto space-y-4">
-            <p className="text-sm text-text-muted italic">
+            <p className="text-base text-text-muted italic">
               * Valores en UF, no incluyen IVA.
             </p>
-            <div className="bg-secondary/5 border border-secondary/15 text-text-main px-6 py-4 rounded-xl text-sm">
+            <div className="bg-secondary/5 border border-secondary/15 text-text-main px-6 py-4 rounded-xl text-base">
               <span className="font-bold block mb-1 text-secondary">Nota sobre integración</span>
               <span className="text-text-muted">La integración con tu POS actual se evalúa y cotiza por separado, según las características de tu sistema. Te lo explicamos en la demo.</span>
             </div>
